@@ -1,0 +1,45 @@
+$color_container :#579C87;
+$color_text_container :#FCCA46;
+
+.container_menu {
+    display: flex;
+    margin: 6% 0;
+}
+.menu {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 45%;
+    
+    padding: 18% 0;
+    background-color: #FCDFDB;
+    box-shadow: 0px 4px 10px 2px  rgba(0,0,0,0.16);
+    color: #3C1218;
+
+    text-align: center;
+}
+.menu_top_right {
+    background-color: #FFF5FE;
+    
+}
+.menu_bottom_left {
+    background-color: #F9F9F9;
+}
+.menu_bottom_right {
+    background-color: #FDFFFD;
+}
+.menu_top_left, .menu_bottom_left {
+
+    margin: 0 6% 0 11.25%; 
+}
+.menu_top_right, .menu_bottom_right {
+
+    margin: 0 11.25% 0 0; 
+
+}
+.container {
+    
+    background-color: $color_container;
+    color: $color_text_container;
+    align-items: center;
+    margin-bottom:10%;
+}
