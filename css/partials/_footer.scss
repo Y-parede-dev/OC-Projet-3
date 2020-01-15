@@ -15,6 +15,12 @@ footer {
     footer > a {
         color: $color_text_footer;
         text-decoration: none;
-        font-size: 2em;
-        padding: 1% 2.8%;
+        font-size: 1.75em;
+        font-weight: bold;
+        padding: 2.5% 2%;
+        width: 30%;
     }
+.contactez-nous {
+    display: flex;
+    justify-content: flex-end;
+}

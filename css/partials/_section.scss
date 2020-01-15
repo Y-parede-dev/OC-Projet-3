@@ -45,9 +45,23 @@ $color_text_container :#FCCA46;
 
 }
 .container {
-    
+    display: flex;
+    justify-content: center;;
+    width: auto;
+
+
+    text-transform: capitalize;
+
+    margin: 0 42% 10% 42%;
     background-color: $color_container;
     color: $color_text_container;
-    align-items: center;
-    margin-bottom:10%;
+    transform-origin: top;
+
+    border-radius: 15px;
+
+    text-align: center;
+    font-size: 1.8em;
+}
+.container>p {
+    margin: 3% 0;
 }
