@@ -13,14 +13,31 @@ footer {
     
 }
     footer > a {
+        width: 30%;
+
         color: $color_text_footer;
         text-decoration: none;
-        font-size: 1.75em;
         font-weight: bold;
-        padding: 2.5% 2%;
-        width: 30%;
     }
 .contactez-nous {
     display: flex;
     justify-content: flex-end;
+}
+@media all and (min-width: 1400px) {
+    footer > a {
+        font-size: 1.8em;
+        padding: .8% 2%;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+    footer > a {
+        font-size: 1.4em;
+        padding: 1% 2%;
+    }
+}
+@media all and (max-width: 1000px) {
+    footer > a {
+        font-size: 1.2em;
+        padding: 1.2% 2%;
+    }
 }

@@ -6,16 +6,26 @@ html, body {
 
 header {
   width: 100%;
-  padding: 3.8% 0;
-  text-align: center;
+  margin: 0;
   color: #FCCA46;
   background-color: #579C87;
-  margin: 0;
-  font-size: 2em; }
+  text-align: center; }
 
 h1 {
   margin: 0; }
 
+@media all and (min-width: 1400px) {
+  header {
+    padding: 1.5% 0;
+    font-size: 2em; } }
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  header {
+    padding: 2.1% 0;
+    font-size: 1.5em; } }
+@media all and (max-width: 1000px) {
+  header {
+    padding: 2.8% 0;
+    font-size: 1.3em; } }
 .container_menu {
   display: flex;
   margin: 6% 0; }
@@ -77,17 +87,27 @@ footer {
   background-color: #579C87; }
 
 footer > a {
+  width: 30%;
   color: #FCCA46;
   text-decoration: none;
-  font-size: 1.75em;
-  font-weight: bold;
-  padding: 2.5% 2%;
-  width: 30%; }
+  font-weight: bold; }
 
 .contactez-nous {
   display: flex;
   justify-content: flex-end; }
 
+@media all and (min-width: 1400px) {
+  footer > a {
+    font-size: 1.8em;
+    padding: .8% 2%; } }
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  footer > a {
+    font-size: 1.4em;
+    padding: 1% 2%; } }
+@media all and (max-width: 1000px) {
+  footer > a {
+    font-size: 1.2em;
+    padding: 1.2% 2%; } }
 .article-first_menu {
   margin: 0 10% 17%;
   width: 80%;
