@@ -5,6 +5,7 @@ html,body {
     margin: 0;
     padding: 0;
 }
-@import "partials/header"; @import "partials/section"; @import "partials/footer";
-
+@import "partials/config";
+@import "partials/header_footer";
+@import "partials/section";
 @import "partials/menu_top_left";
