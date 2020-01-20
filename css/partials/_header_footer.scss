@@ -8,6 +8,7 @@ header {
     color: $color_text;
     background-color: $color_back;
     
+    font-weight: bold;
     text-align: center;
 }
 .hidden {
@@ -30,13 +31,12 @@ footer {
     background-color: $color_back;
     
 }
-    footer > a {
-        width: 30%;
-
+    footer a {
         color: $color_text;
         text-decoration: none;
         font-weight: bold;
     }
+
 .contactez-nous {
     display: flex;
     justify-content: flex-end;
@@ -50,6 +50,7 @@ footer {
         font-size: 1.8em;
     }
     footer > a {
+        width: 10.8%;
         font-size: 1.8em;
         padding: .7% 2%;
     }
@@ -74,3 +75,4 @@ footer {
         padding: 1.2% 2%;
     }
 } 
+

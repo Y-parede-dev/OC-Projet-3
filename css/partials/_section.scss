@@ -1,4 +1,17 @@
-
+.title_menu {
+    text-transform: capitalize;
+    margin: 0;
+    font-family: sans-serif;
+}
+.title_menu_all_capitalize {
+    text-transform: uppercase;
+}
+.p_menu {
+    margin: 24px 0 30px;
+}
+.menu_top_left {
+    font-family: 'Devonshire', cursive;
+}
 @media all and (min-width: 1400px) {
     .container_menu {
         display: flex;
@@ -19,9 +32,6 @@
         font-size: 150%;
         text-decoration: none;
         text-align: center;
-        &:hover {
-            background-color: $color_text;
-        }
     }
     .img_menu {
         width: 12%;
@@ -89,9 +99,6 @@
         font-size: 150%;
         text-decoration: none;
         text-align: center;
-        &:hover {
-            background-color: $color_text;
-        }
     }
     .img_menu {
         width: 12%;
@@ -159,7 +166,6 @@
         font-size: 100%;
         text-decoration: none;
         text-align: center;
-
     }
     .img_menu {
         width: 12%;
@@ -205,19 +211,5 @@
     }
     .container>p {
         margin: 3% 0;
-    }
-    .un {
-        display: flex;
-        flex-direction: column-reverse;
-        transform: scale(1);
-        opacity: 1;
-        transition: transform 4000ms;
-        &:hover {
-            transform: scale(1.5);
-            opacity: .8;
-            filter: blur(2px);
-            transition: transform 5000ms;
-        }
-    }
-    
+    } 
 }
