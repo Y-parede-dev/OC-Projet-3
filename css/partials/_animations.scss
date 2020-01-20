@@ -1,0 +1,41 @@
+.anim_menu_zoom {
+    display: flex;
+    flex-direction: column-reverse;
+    
+    
+    &:hover {
+        animation-name: zoom_opacity;
+        animation-duration: 2500ms;
+        transform: scale(1.5);
+        opacity: 0;
+        
+    }
+}
+.effect_wiggle {
+    transform-origin: center;
+    animation-name: wiggle;
+    animation-duration: 750ms;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes zoom_opacity {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+ 
+    to {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+
+}
+@keyframes wiggle {
+    0% {transform: rotate(5deg);}
+    25% {transform: rotate(-5deg);}
+    50% {transform: rotate(10deg);}
+    75% {transform: rotate(-10deg);}
+    100% {transform: rotate(0deg);} 
+  }
+
