@@ -9,6 +9,7 @@
 .p_menu {
     margin: 24px 0 30px;
 }
+
 .menu_top_left {
     font-family: 'Devonshire', cursive;
 }
@@ -60,12 +61,12 @@
     .container {
         display: flex;
         justify-content: center;
-        width: auto;
+        width: 18%;
 
 
         text-transform: capitalize;
 
-        margin: 0 42% 10% 42%;
+        margin: 0 41% 10%;
         background-color: $color_back;
         color: $color_text;
         transform-origin: top;
@@ -83,6 +84,7 @@
     .container_menu {
         display: flex;
         margin: 6% 0;
+        width: 100%;
         
     }
     .menu {
@@ -127,12 +129,12 @@
     .container {
         display: flex;
         justify-content: center;;
-        width: auto;
+        width: 25%;
 
 
         text-transform: capitalize;
 
-        margin: 0 42% 10% 42%;
+        margin: 0 37.5% 10%;
         background-color: $color_back;
         color: $color_text;
         transform-origin: top;
@@ -199,7 +201,7 @@
 
         text-transform: capitalize;
 
-        margin: 0 30% 10%;
+        margin: 0 30% 18%;
         background-color: $color_back;
         color: $color_text;
         transform-origin: top;

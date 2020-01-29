@@ -8,15 +8,16 @@ html, body {
   display: flex;
   flex-direction: column-reverse; }
   .anim_menu_zoom:hover {
+    filter: blur(4px);
     animation-name: zoom_opacity;
     animation-duration: 2500ms;
     transform: scale(1.5);
-    opacity: 0; }
+    opacity: 0.6; }
 
 .effect_wiggle {
   transform-origin: center;
   animation-name: wiggle;
-  animation-duration: 750ms;
+  animation-duration: 250ms;
   animation-iteration-count: infinite; }
 
 @keyframes zoom_opacity {
@@ -25,16 +26,26 @@ html, body {
     opacity: 1; }
   to {
     transform: scale(1.5);
-    opacity: 0; } }
+    opacity: 0.45; } }
 @keyframes wiggle {
   0% {
-    transform: rotate(5deg); }
+    transform: rotate(2deg); }
+  12% {
+    transform: rotate(0deg); }
   25% {
-    transform: rotate(-5deg); }
+    transform: rotate(-2deg); }
+  37% {
+    transform: rotate(0deg); }
   50% {
-    transform: rotate(10deg); }
+    transform: rotate(2deg); }
+  62% {
+    transform: rotate(0deg); }
   75% {
-    transform: rotate(-10deg); }
+    transform: rotate(-2deg); }
+  87% {
+    transform: rotate(0deg); }
+  95% {
+    transform: rotate(2deg); }
   100% {
     transform: rotate(0deg); } }
 /*----header-----*/
@@ -71,14 +82,12 @@ footer a {
   display: flex;
   justify-content: flex-end; }
 
-/*---- rules media query ----*/
 @media all and (min-width: 1400px) {
   header {
     padding: 1.3% 0;
     font-size: 1.8em; }
 
   footer > a {
-    width: 10.8%;
     font-size: 1.8em;
     padding: .7% 2%; } }
 @media screen and (min-width: 1000px) and (max-width: 1400px) {
@@ -151,9 +160,9 @@ footer a {
   .container {
     display: flex;
     justify-content: center;
-    width: auto;
+    width: 18%;
     text-transform: capitalize;
-    margin: 0 42% 10% 42%;
+    margin: 0 41% 10%;
     background-color: #579C87;
     color: #FCCA46;
     transform-origin: top;
@@ -166,7 +175,8 @@ footer a {
 @media screen and (min-width: 1000px) and (max-width: 1400px) {
   .container_menu {
     display: flex;
-    margin: 6% 0; }
+    margin: 6% 0;
+    width: 100%; }
 
   .menu {
     display: flex;
@@ -203,9 +213,9 @@ footer a {
   .container {
     display: flex;
     justify-content: center;
-    width: auto;
+    width: 25%;
     text-transform: capitalize;
-    margin: 0 42% 10% 42%;
+    margin: 0 37.5% 10%;
     background-color: #579C87;
     color: #FCCA46;
     transform-origin: top;
@@ -257,7 +267,7 @@ footer a {
     justify-content: center;
     width: 40%;
     text-transform: capitalize;
-    margin: 0 30% 10%;
+    margin: 0 30% 18%;
     background-color: #579C87;
     color: #FCCA46;
     transform-origin: top;

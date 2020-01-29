@@ -4,17 +4,18 @@
     
     
     &:hover {
+        filter: blur(4px);
         animation-name: zoom_opacity;
         animation-duration: 2500ms;
         transform: scale(1.5);
-        opacity: 0;
+        opacity: 0.6;
         
     }
 }
 .effect_wiggle {
     transform-origin: center;
     animation-name: wiggle;
-    animation-duration: 750ms;
+    animation-duration: 250ms;
     animation-iteration-count: infinite;
 }
 
@@ -27,15 +28,20 @@
  
     to {
         transform: scale(1.5);
-        opacity: 0;
+        opacity: 0.45;
     }
 
 }
 @keyframes wiggle {
-    0% {transform: rotate(5deg);}
-    25% {transform: rotate(-5deg);}
-    50% {transform: rotate(10deg);}
-    75% {transform: rotate(-10deg);}
+    0% {transform: rotate(2deg);}
+    12% {transform: rotate(0deg);}
+    25% {transform: rotate(-2deg);}
+    37% {transform: rotate(0deg);}
+    50% {transform: rotate(2deg);}
+    62% {transform: rotate(0deg);}
+    75% {transform: rotate(-2deg);}
+    87% {transform: rotate(0deg);}
+    95% {transform: rotate(2deg)}
     100% {transform: rotate(0deg);} 
   }
 

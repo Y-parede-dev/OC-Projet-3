@@ -42,7 +42,6 @@ footer {
     justify-content: flex-end;
 }
 
-/*---- rules media query ----*/
 
 @media all and (min-width: 1400px) {
     header {
@@ -50,10 +49,10 @@ footer {
         font-size: 1.8em;
     }
     footer > a {
-        width: 10.8%;
         font-size: 1.8em;
         padding: .7% 2%;
     }
+   
 }
 @media screen and (min-width: 1000px) and (max-width: 1400px) {
     header {
@@ -61,6 +60,7 @@ footer {
         font-size: 1.5em;
     }
     footer > a {
+        
         font-size: 1.4em;
         padding: 1% 2%;
     }
@@ -71,6 +71,7 @@ footer {
         font-size: 1.3em;
     }
     footer > a {
+       
         font-size: 1.2em;
         padding: 1.2% 2%;
     }
