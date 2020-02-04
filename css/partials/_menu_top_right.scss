@@ -1,7 +1,63 @@
-main {
+.main_top-R {
     margin: $margin_menu-XL;
     width: $width_menu-XL;
     background-color: $color_back_second_M;
     box-shadow: $b-shadow;
+    padding: 0 0 10%;
 
+}
+main h2 {
+    font-size: 3em;
+    text-align: center;
+    padding: 14% 0 0;
+    margin: 0 0 10%;
+    color: #C67412;
+    animation: wheelHueColor 100s infinite
+}
+article {
+    margin:1% 10% -4%;
+    font-size: 1.5em;
+}
+article h3 {
+    text-align: center;
+    font-size: 1.6em;
+}
+.header--top, .header--middle, .header--bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 4%;
+}
+.second_barre {
+    width: 39%;
+    height: .5%;
+    margin: 0 -8%;
+}
+.title_second_M--top, .second_menu-top {
+    color: #C67412;
+}
+.title_second_M--middle, .second_menu-middle {
+    color: #A56799;
+}
+.title_second_M--bottom, .second_menu--bottom {
+    color: #6E4CCC;
+}
+
+
+@keyframes wheelHueColor {
+
+    10%      { color: hsl(360, 65%, 45%); }
+    20%      { color: hsl( 36, 80%, 45%); }
+    30%      { color: hsl( 72, 75%, 35%); }
+    40%      { color: hsl(108, 65%, 35%); }
+    50%      { color: hsl(144, 75%, 35%); }
+    60%      { color: hsl(180, 75%, 35%); }
+    70%      { color: hsl(216, 60%, 45%); }
+    80%      { color: hsl(252, 65%, 50%); }
+    90%      { color: hsl(288, 60%, 40%); }
+}
+
+.text {
+    color: hsl(324, 70%, 45%);
+    animation: wheelHueColor 100s infinite;
 }

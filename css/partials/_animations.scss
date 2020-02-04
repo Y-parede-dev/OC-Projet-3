@@ -15,7 +15,7 @@
 .effect_wiggle {
     transform-origin: center;
     animation-name: wiggle;
-    animation-duration: 250ms;
+    animation-duration: 400ms;
     animation-iteration-count: infinite;
 }
 
@@ -33,15 +33,16 @@
 
 }
 @keyframes wiggle {
-    0% {transform: rotate(2deg);}
-    12% {transform: rotate(0deg);}
-    25% {transform: rotate(-2deg);}
-    37% {transform: rotate(0deg);}
-    50% {transform: rotate(2deg);}
-    62% {transform: rotate(0deg);}
-    75% {transform: rotate(-2deg);}
-    87% {transform: rotate(0deg);}
-    95% {transform: rotate(2deg)}
+    0% {transform: rotate(1deg);}
+    10% {transform: rotate(0deg);}
+    20% {transform: rotate(-1.5deg);}
+    30% {transform: rotate(0deg);}
+    40% {transform: rotate(0deg);}
+    50% {transform: rotate(-0deg);}
+    60% {transform: rotate(4deg);}
+    70% {transform: rotate(0deg);}
+    80% {transform: rotate(-6deg);}
+    90% {transform: rotate(0deg);} 
     100% {transform: rotate(0deg);} 
   }
 

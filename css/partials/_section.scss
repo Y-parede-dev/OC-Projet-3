@@ -34,6 +34,9 @@
         text-decoration: none;
         text-align: center;
     }
+    .menu_bottom {
+        padding: 12.75% 0;
+    }
     .img_menu {
         width: 12%;
         margin: 0 44%;
@@ -58,6 +61,7 @@
         margin: 0 22% 0 0; 
 
     }
+ 
     .container {
         display: flex;
         justify-content: center;
@@ -76,7 +80,7 @@
         text-align: center;
         font-size: 1.8em;
     }
-    .container>p {
+    .container p {
         margin: 3% 0;
     }
 }
@@ -101,6 +105,9 @@
         font-size: 150%;
         text-decoration: none;
         text-align: center;
+    }
+    .menu_bottom {
+        padding: 16.492% 0;
     }
     .img_menu {
         width: 12%;
@@ -169,6 +176,9 @@
         text-decoration: none;
         text-align: center;
     }
+    .menu_bottom {
+        padding: 19.785% 0;
+    }
     .img_menu {
         width: 12%;
         margin: 0 44%;
@@ -211,7 +221,7 @@
         text-align: center;
         font-size: 1.8em;
     }
-    .container>p {
+    .container p {
         margin: 3% 0;
     } 
 }
