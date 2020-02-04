@@ -1,7 +1,7 @@
 
  .article-first_menu {
     color: #3D1319;
-    background-color: #FCDFDB;
+    background-color: $color_back_first_M;
     box-shadow: $b-shadow;
     font-family: 'Devonshire', cursive;
  }
@@ -33,8 +33,8 @@
 
 @media all and (min-width: 1400px) {
     .article-first_menu {
-        margin: 0 17.5% 17%;
-        width: 65%;
+        margin: $margin_menu-XL;
+        width: $width_menu-XL;
     }
     .img_barre_menu_top_left { 
         width:35%; height: 10%;

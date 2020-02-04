@@ -26,7 +26,7 @@
         cursor: pointer;
 
         padding: 11% 0;
-        background-color: #FCDFDB;
+        background-color: $color_back_first_M;
         box-shadow: $b-shadow;
         color: #3C1218;
 
@@ -40,14 +40,14 @@
     }
     
     .menu_top_right {
-        background-color: #FFF5FE;
+        background-color: $color_back_second_M;
         
     }
     .menu_bottom_left {
-        background-color: #F9F9F9;
+        background-color: $color_back_third_M;
     }
     .menu_bottom_right {
-        background-color: #FDFFFD;
+        background-color: $color_back_fourth_M;
     }
     .menu_top_left, .menu_bottom_left {
 
