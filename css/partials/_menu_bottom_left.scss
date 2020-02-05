@@ -1,18 +1,3 @@
-
-
-$color_back :#579C87;
-$color_text :#FCCA46;
-
-$color_back_first_M : #FCDFDB;;
-$color_back_second_M : #FFF5FE;
-$color_back_third_M : #F9F9F9;
-$color_back_fourth_M : #FDFFFD;
-
-$margin_menu-XL : 0 17.5% 17%;
-$width_menu-XL : 65%;
-$margin_header: 0;
-$b-shadow: 0 2px 8.5px 1px rgba(0,0,0,0.175);
-
 @mixin color_title--third {
     background: -webkit-gradient(linear, left top,right bottom, from(#0228DD), to(#339CF9));
     background: -moz-gradient(linear, left top,right bottom, from(#0228DD), to(#339CF9));
@@ -25,7 +10,24 @@ $b-shadow: 0 2px 8.5px 1px rgba(0,0,0,0.175);
     -o-text-fill-color: transparent;
     
 }
+.main_bottom-L {
+    background-color: #EDEFEF;
+}
+.third_menu--top, .third_menu--middle, .third_menu--bottom {
+    color: #272727;
+}
+.title_third_inside {
+    text-align: center;
+    font-size: 5em;
+    padding: 14% 0 5%;
 
-
-
-
+    
+    @include color_title--third
+  
+}
+.title_third_M {
+    font-size: 1em;
+}
+.third_M {
+    font-size: 1.23em;
+}

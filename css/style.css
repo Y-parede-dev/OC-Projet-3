@@ -288,6 +288,18 @@ footer a {
 
   .container p {
     margin: 3% 0; } }
+body {
+  width: 100%; }
+
+main {
+  margin: 0 17.5% 17%;
+  width: 65%;
+  box-shadow: 0 2px 8.5px 1px rgba(0, 0, 0, 0.175);
+  padding: 0 0 10%; }
+
+article {
+  margin: 1% 10% 7%; }
+
 .article-first_menu {
   color: #3D1319;
   background-color: #FCDFDB;
@@ -515,25 +527,20 @@ footer a {
     margin: 0.38% 0 8.2%;
     font-size: 2em; } }
 .main_top-R {
-  margin: 0 17.5% 17%;
-  width: 65%;
   background-color: #FFF5FE;
-  box-shadow: 0 2px 8.5px 1px rgba(0, 0, 0, 0.175);
   padding: 0 0 10%; }
 
-main h2 {
+main .title_second--inside {
   font-size: 3em;
   text-align: center;
   padding: 14% 0 0;
   margin: 0 0 10%;
-  color: #C67412;
-  animation: wheelHueColor 100s infinite; }
+  animation: wheelHueColor 10ms infinite; }
 
-article {
-  margin: 1% 10% -4%;
+.second_M {
   font-size: 1.5em; }
 
-article h3 {
+article .title_second_M {
   text-align: center;
   font-size: 1.6em; }
 
@@ -543,8 +550,8 @@ article h3 {
   justify-content: space-between;
   margin: 0 0 4%; }
 
-.second_barre {
-  width: 39%;
+.second_barre, .third_barre {
+  width: 36%;
   height: .5%;
   margin: 0 -8%; }
 
@@ -558,26 +565,34 @@ article h3 {
   color: #6E4CCC; }
 
 @keyframes wheelHueColor {
-  10% {
-    color: #bd2828; }
-  20% {
-    color: #cf8517; }
-  30% {
-    color: #819c16; }
-  40% {
-    color: #36931f; }
-  50% {
-    color: #169c4c; }
-  60% {
-    color: #169c9c; }
-  70% {
-    color: #2e65b8; }
-  80% {
-    color: #4e2dd2; }
-  90% {
-    color: #8b29a3; } }
-.text {
-  color: #c32283;
-  animation: wheelHueColor 100s infinite; }
+  10%, 100% {
+    background: -webkit-gradient(linear, left top, right bottom, from(#C67412), to(#6E4CCC));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; } }
+.main_bottom-L {
+  background-color: #EDEFEF; }
+
+.third_menu--top, .third_menu--middle, .third_menu--bottom {
+  color: #272727; }
+
+.title_third_inside {
+  text-align: center;
+  font-size: 5em;
+  padding: 14% 0 5%;
+  background: -webkit-gradient(linear, left top, right bottom, from(#0228DD), to(#339CF9));
+  background: -moz-gradient(linear, left top, right bottom, from(#0228DD), to(#339CF9));
+  background: -o-gradient(linear, left top, right bottom, from(#0228DD), to(#339CF9));
+  -webkit-background-clip: text;
+  -o-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -o-text-fill-color: transparent; }
+
+.title_third_M {
+  font-size: 1em; }
+
+.third_M {
+  font-size: 1.23em; }
 
 /*# sourceMappingURL=style.css.map */
