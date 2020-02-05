@@ -1,27 +1,21 @@
 
- .article-first_menu {
-    color: #3D1319;
+ .main_top-L {
     background-color: $color_back_first_M;
     box-shadow: $b-shadow;
     font-family: 'Devonshire', cursive;
  }
- .first_menu {
-    display: flex;
-    justify-content: space-between;
-}
+ .link_first {
+     color: $color_text_first-M;
+ }
+ 
 .title_first {
     text-align: center;
 }
 .menu_choice {
     display: flex;
     justify-content: space-between;
+    
 }
-    .menu_price {
-        font-weight: bold;
-    }
-    .menu_choice_plate_last, .menu_price_last {
-        margin: 0;
-    }
 .aside_menu_top_left {
     display: flex;
     flex-direction: column;   
@@ -29,24 +23,19 @@
 .container_bottom_first_menu {
     display: flex;
     justify-content: center;
-} 
+}
+
 
 @media all and (min-width: 1400px) {
-    .article-first_menu {
-        margin: $margin_menu-XL;
-        width: $width_menu-XL;
-    }
+   
     .img_barre_menu_top_left { 
         width:35%; height: 10%;
         margin: 2% 0 ;
     }
-    .title_first {
-        margin: 5.35% 0 2.2%;
-        font-size: 2.15em;
-    }
+    
     .title_first_inside {
         margin: .9% 0 6%;
-        font-size: 1.99em;
+        font-size: 3.5em;
     }
     .title_first_bottom {
         margin: 0;
@@ -63,37 +52,27 @@
     .container_menu_choice {
         margin: 4% 0 9.5%;
     }
-        
-        .menu_choice_plate, .menu_price {
-            margin: 0 0 2.8%;
-            font-size: 1.15em;
-        }
-       
+
     .aside_menu_top_left {
         margin: 0 10%;
     } 
-        .img_note_musique_inside_menu_bottom {
-            margin: 0 .7% 2.5% 0;
-            width: 5%; height: 5%;
-        }
         .title_first_bottom {
-            margin: .38% 0 8.2% ;
-            font-size: 2em;
+            margin: -0.62% 0 8.2% ;
+            font-size: 4em;
+        }
+        .img_note_musique_inside_menu_bottom {
+            margin: $margin--img_music;
+            width: $seize--img_music;
+            height: $seize--img_music;
         }
 }
 @media screen and (min-width: 1000px) and (max-width: 1400px) {
-    .article-first_menu {
-        margin: 0 10% 17%;
-        width: 80%;
-    }
+  
     .img_barre_menu_top_left { 
         width:30%; height: 10%;
         margin: 2% 0 ;
     }
-    .title_first {
-        margin: 5.35% 0 2.2%;
-        font-size: 2.15em;
-    }
+    
     .title_first_inside {
         margin: .9% 0 6%;
         font-size: 1.99em;
@@ -114,35 +93,27 @@
         margin: 4% 0 9.5%;
     }
         
-        .menu_choice_plate, .menu_price {
-            margin: 0 0 2.8%;
-            font-size: 1.15em;
-        }
+   
        
     .aside_menu_top_left {
         margin: 0 10%;
     } 
-        .img_note_musique_inside_menu_bottom {
-            margin: 0 .7% 2.5% 0;
-            width: 5%; height: 5%;
-        }
+
         .title_first_bottom {
-            margin: .38% 0 8.2% ;
-            font-size: 2em;
+            margin: -1.2% 0 8.2% ;
+            font-size: 3em;
+        }
+        .img_note_musique_inside_menu_bottom {
+            margin: $margin--img_music;
+            width: $seize--img_music;
+            height: $seize--img_music;
         }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-    .article-first_menu {
-        margin: 0 8.5% 17%;
-        width: 85%;
-    }
+ 
     .img_barre_menu_top_left { 
         width:30%; height: 10%;
         margin: 2% 0 ;
-    }
-    .title_first {
-        margin: 5.35% 0 2.2%;
-        font-size: 2.15em;
     }
     .title_first_inside {
         margin: .9% 0 6%;
@@ -164,28 +135,22 @@
         margin: 4% 0 9.5%;
     }
         
-        .menu_choice_plate, .menu_price {
-            margin: 0 0 2.8%;
-            font-size: 1.15em;
-        }
        
     .aside_menu_top_left {
         margin: 0 10%;
     } 
         .img_note_musique_inside_menu_bottom {
-            margin: 0 .7% 2.5% 0;
-            width: 5%; height: 5%;
+            margin: $margin--img_music;
+            width: $seize--img_music;
+            height: $seize--img_music;
         }
         .title_first_bottom {
-            margin: .38% 0 8.2% ;
-            font-size: 2em;
+            margin: -1% 0 8.2% ;
+            font-size: 2.5em;
         }
 }
 @media all and (max-width: 800px) {
-    .article-first_menu {
-        margin: 0 6.5% 17%;
-        width: 87%;
-    }
+
     .img_barre_menu_top_left { 
         width:30%; height: 10%;
         margin: 2% 0 ;
@@ -214,10 +179,7 @@
         margin: 4% 0 9.5%;
     }
         
-        .menu_choice_plate, .menu_price {
-            margin: 0 0 2.8%;
-            font-size: 1.15em;
-        }
+  
         .menu_choice_plate {
             width: 70%;
         }
@@ -225,12 +187,14 @@
     .aside_menu_top_left {
         margin: 0 10%;
     } 
-        .img_note_musique_inside_menu_bottom {
-            margin: 0 .7% 2.5% 0;
-            width: 5%; height: 5%;
-        }
+     
         .title_first_bottom {
             margin: .38% 0 8.2% ;
             font-size: 2em;
+        }
+        .img_note_musique_inside_menu_bottom {
+            margin: $margin--img_music;
+            width: $seize--img_music;
+            height: $seize--img_music;
         }
 }

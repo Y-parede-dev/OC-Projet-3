@@ -10,8 +10,41 @@ main {
 article {
     margin:1% 10% 7%;
 }
+.title_first {
+    margin: 5.35% 0 2.2%;
+    font-size: 2.15em;
+}
 .barre {
     width: 36%;
     height: .5%;
     margin: 0 -8%;
+}
+.title_all {
+    font-size: 2.5em;
+}
+.menu_price {
+    font-weight: bold;
+}
+.menu_choice_plate_last, .menu_price_last {
+    margin: 0;
+}
+.menu_choice_plate,.menu_price{
+    font-size: 1.8em;
+}
+@media screen and (min-width: 1150px) and (max-width: 1520px) {
+    .title_all {
+        font-size: 2em;
+    }
+    .barre {
+        width: 30%;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1150px) {
+
+    .title_all {
+        font-size: 1.5em;
+    }
+    .barre {
+        width: 25%;
+    }
 }

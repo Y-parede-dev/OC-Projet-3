@@ -285,20 +285,43 @@ main {
 article {
   margin: 1% 10% 7%; }
 
+.title_first {
+  margin: 5.35% 0 2.2%;
+  font-size: 2.15em; }
+
 .barre {
   width: 36%;
   height: .5%;
   margin: 0 -8%; }
 
-.article-first_menu {
-  color: #3D1319;
+.title_all {
+  font-size: 2.5em; }
+
+.menu_price {
+  font-weight: bold; }
+
+.menu_choice_plate_last, .menu_price_last {
+  margin: 0; }
+
+@media screen and (min-width: 1150px) and (max-width: 1520px) {
+  .title_all {
+    font-size: 2em; }
+
+  .barre {
+    width: 30%; } }
+@media screen and (min-width: 800px) and (max-width: 1150px) {
+  .title_all {
+    font-size: 1.5em; }
+
+  .barre {
+    width: 25%; } }
+.main_top-L {
   background-color: #FCDFDB;
   box-shadow: 0 2px 8.5px 1px rgba(0, 0, 0, 0.175);
   font-family: 'Devonshire', cursive; }
 
-.first_menu {
-  display: flex;
-  justify-content: space-between; }
+.link_first {
+  color: #3C1218; }
 
 .title_first {
   text-align: center; }
@@ -306,12 +329,6 @@ article {
 .menu_choice {
   display: flex;
   justify-content: space-between; }
-
-.menu_price {
-  font-weight: bold; }
-
-.menu_choice_plate_last, .menu_price_last {
-  margin: 0; }
 
 .aside_menu_top_left {
   display: flex;
@@ -321,23 +338,18 @@ article {
   display: flex;
   justify-content: center; }
 
-@media all and (min-width: 1400px) {
-  .article-first_menu {
-    margin: 0 17.5% 17%;
-    width: 65%; }
+.menu_choice_plate, .menu_price {
+  font-size: 1.5em; }
 
+@media all and (min-width: 1400px) {
   .img_barre_menu_top_left {
     width: 35%;
     height: 10%;
     margin: 2% 0; }
 
-  .title_first {
-    margin: 5.35% 0 2.2%;
-    font-size: 2.15em; }
-
   .title_first_inside {
     margin: .9% 0 6%;
-    font-size: 1.99em; }
+    font-size: 3.5em; }
 
   .title_first_bottom {
     margin: 0; }
@@ -354,34 +366,22 @@ article {
   .container_menu_choice {
     margin: 4% 0 9.5%; }
 
-  .menu_choice_plate, .menu_price {
-    margin: 0 0 2.8%;
-    font-size: 1.15em; }
-
   .aside_menu_top_left {
     margin: 0 10%; }
 
-  .img_note_musique_inside_menu_bottom {
-    margin: 0 .7% 2.5% 0;
-    width: 5%;
-    height: 5%; }
-
   .title_first_bottom {
-    margin: 0.38% 0 8.2%;
-    font-size: 2em; } }
+    margin: -0.62% 0 8.2%;
+    font-size: 4em; }
+
+  .img_note_musique_inside_menu_bottom {
+    margin: 0 0.7% 2.5% 0;
+    width: 5%;
+    height: 5%; } }
 @media screen and (min-width: 1000px) and (max-width: 1400px) {
-  .article-first_menu {
-    margin: 0 10% 17%;
-    width: 80%; }
-
   .img_barre_menu_top_left {
     width: 30%;
     height: 10%;
     margin: 2% 0; }
-
-  .title_first {
-    margin: 5.35% 0 2.2%;
-    font-size: 2.15em; }
 
   .title_first_inside {
     margin: .9% 0 6%;
@@ -402,34 +402,22 @@ article {
   .container_menu_choice {
     margin: 4% 0 9.5%; }
 
-  .menu_choice_plate, .menu_price {
-    margin: 0 0 2.8%;
-    font-size: 1.15em; }
-
   .aside_menu_top_left {
     margin: 0 10%; }
 
-  .img_note_musique_inside_menu_bottom {
-    margin: 0 .7% 2.5% 0;
-    width: 5%;
-    height: 5%; }
-
   .title_first_bottom {
-    margin: 0.38% 0 8.2%;
-    font-size: 2em; } }
+    margin: -1.2% 0 8.2%;
+    font-size: 3em; }
+
+  .img_note_musique_inside_menu_bottom {
+    margin: 0 0.7% 2.5% 0;
+    width: 5%;
+    height: 5%; } }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  .article-first_menu {
-    margin: 0 8.5% 17%;
-    width: 85%; }
-
   .img_barre_menu_top_left {
     width: 30%;
     height: 10%;
     margin: 2% 0; }
-
-  .title_first {
-    margin: 5.35% 0 2.2%;
-    font-size: 2.15em; }
 
   .title_first_inside {
     margin: .9% 0 6%;
@@ -449,27 +437,19 @@ article {
 
   .container_menu_choice {
     margin: 4% 0 9.5%; }
-
-  .menu_choice_plate, .menu_price {
-    margin: 0 0 2.8%;
-    font-size: 1.15em; }
 
   .aside_menu_top_left {
     margin: 0 10%; }
 
   .img_note_musique_inside_menu_bottom {
-    margin: 0 .7% 2.5% 0;
+    margin: 0 0.7% 2.5% 0;
     width: 5%;
     height: 5%; }
 
   .title_first_bottom {
-    margin: 0.38% 0 8.2%;
-    font-size: 2em; } }
+    margin: -1% 0 8.2%;
+    font-size: 2.5em; } }
 @media all and (max-width: 800px) {
-  .article-first_menu {
-    margin: 0 6.5% 17%;
-    width: 87%; }
-
   .img_barre_menu_top_left {
     width: 30%;
     height: 10%;
@@ -497,10 +477,6 @@ article {
 
   .container_menu_choice {
     margin: 4% 0 9.5%; }
-
-  .menu_choice_plate, .menu_price {
-    margin: 0 0 2.8%;
-    font-size: 1.15em; }
 
   .menu_choice_plate {
     width: 70%; }
@@ -508,33 +484,31 @@ article {
   .aside_menu_top_left {
     margin: 0 10%; }
 
-  .img_note_musique_inside_menu_bottom {
-    margin: 0 .7% 2.5% 0;
-    width: 5%;
-    height: 5%; }
-
   .title_first_bottom {
     margin: 0.38% 0 8.2%;
-    font-size: 2em; } }
+    font-size: 2em; }
+
+  .img_note_musique_inside_menu_bottom {
+    margin: 0 0.7% 2.5% 0;
+    width: 5%;
+    height: 5%; } }
 .main_top-R {
   background-color: #FFF5FE;
   padding: 0 0 10%; }
 
 main .title_second--inside {
-  font-size: 3em;
+  font-size: 3.5em;
   text-align: center;
   padding: 14% 0 0;
   margin: 0 0 10%;
+  font-family: 'Croissant One', sans-serif;
   background: linear-gradient(0.25turn, #C67412, #6E4CCC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-.second_M {
-  font-size: 1.5em; }
-
-article .title_second_M {
+.title_second_M {
   text-align: center;
-  font-size: 1.5em; }
+  font-size: 2em; }
 
 .header--top, .header--middle, .header--bottom {
   display: flex;
@@ -552,7 +526,8 @@ article .title_second_M {
   color: #6E4CCC; }
 
 .main_bottom-L {
-  background-color: #EDEFEF; }
+  background-color: #EDEFEF;
+  font-family: 'Dancing Script', sans-serif; }
 
 .third_menu--top, .third_menu--middle, .third_menu--bottom {
   color: #272727; }
@@ -566,14 +541,13 @@ article .title_second_M {
   -webkit-text-fill-color: transparent; }
 
 .title_third_M {
-  font-size: 1em; }
-
-.third_M {
-  font-size: 1.23em; }
+  font-size: 1.8em;
+  font-weight: 400; }
 
 .main_bottom-R {
   padding: 0 0 10%;
-  color: black; }
+  color: black;
+  font-family: 'Kaushan Script', cursive; }
 
 .title_fourth_inside {
   font-size: 6em;
@@ -586,9 +560,6 @@ article .title_second_M {
   -webkit-text-fill-color: transparent; }
 
 .title_fourth_M {
-  font-size: 1.3em; }
-
-.fourth_M {
-  font-size: 1.5em; }
+  font-size: 2em; }
 
 /*# sourceMappingURL=style.css.map */

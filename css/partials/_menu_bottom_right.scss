@@ -1,6 +1,8 @@
 .main_bottom-R {
     padding: 0 0 10%;
     color: black;
+    font-family: 'Kaushan Script', cursive;
+    
 }
 .title_fourth_inside {
     font-size: 6em;
@@ -11,8 +13,5 @@
     @include gradient(.25turn, $color_text_fourth_M--1, $color_text_fourth_M--2);
 }
 .title_fourth_M {
-    font-size: 1.3em;
-}
-.fourth_M {
-    font-size: 1.5em;
+    font-size: 2em;
 }

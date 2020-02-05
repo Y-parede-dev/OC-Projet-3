@@ -7,20 +7,16 @@
 
 }
 main .title_second--inside {
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: center;
     padding: 14% 0 0;
     margin: 0 0 10%;
-
+    font-family: 'Croissant One', sans-serif;
     @include gradient(.25turn, $color_text_second_M--1, $color_text_second_M--2); 
 }
-.second_M {
-    
-    font-size: 1.5em;
-}
-article .title_second_M {
+.title_second_M {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 .header--top, .header--middle, .header--bottom{
     display: flex;
