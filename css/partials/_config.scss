@@ -13,19 +13,15 @@ $width_menu-XL : 65%;
 $margin_header: 0;
 $b-shadow: 0 2px 8.5px 1px rgba(0,0,0,0.175);
 
-@mixin color_title--third {
-    background: -webkit-gradient(linear, left top,right bottom, from(#0228DD), to(#339CF9));
-    background: -moz-gradient(linear, left top,right bottom, from(#0228DD), to(#339CF9));
-    background: -o-gradient(linear, left top,right bottom, from(#0228DD), to(#339CF9));
+
+
+@mixin gradient($rotate, $color--1, $color--2) {
+    background: linear-gradient($rotate, $color--1, $color--2);
+  
+    
     -webkit-background-clip: text;
-    -o-background-clip: text;
-    -moz-background-clip: text;
+    
+    
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    -o-text-fill-color: transparent;
     
 }
-
-
-
-

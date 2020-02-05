@@ -11,7 +11,10 @@ main .title_second--inside {
     text-align: center;
     padding: 14% 0 0;
     margin: 0 0 10%;
-    animation: wheelHueColor 10ms infinite; 
+
+    background: -webkit-gradient(linear, left top, right bottom, from(#C67412), to(#6E4CCC));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .second_M {
     
@@ -27,11 +30,7 @@ article .title_second_M {
     justify-content: space-between;
     margin: 0 0 4%;
 }
-.second_barre, .third_barre {
-    width: 36%;
-    height: .5%;
-    margin: 0 -8%;
-}
+
 .title_second_M--top, .second_menu-top {
     color: #C67412;
 
@@ -44,12 +43,4 @@ article .title_second_M {
 }
 
 
-@keyframes wheelHueColor {
-
-   10%, 100% { 
-        background: -webkit-gradient(linear, left top, right bottom, from(#C67412), to(#6E4CCC));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-   }
-}
 
