@@ -12,9 +12,7 @@ main .title_second--inside {
     padding: 14% 0 0;
     margin: 0 0 10%;
 
-    background: -webkit-gradient(linear, left top, right bottom, from(#C67412), to(#6E4CCC));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include gradient(.25turn, $color_text_second_M--1, $color_text_second_M--2); 
 }
 .second_M {
     
@@ -22,7 +20,7 @@ main .title_second--inside {
 }
 article .title_second_M {
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
 .header--top, .header--middle, .header--bottom{
     display: flex;
@@ -32,14 +30,14 @@ article .title_second_M {
 }
 
 .title_second_M--top, .second_menu-top {
-    color: #C67412;
+    color: $color_text_second_M--1;
 
 }
 .title_second_M--middle, .second_menu-middle {
     color: #A56799;
 }
 .title_second_M--bottom, .second_menu--bottom {
-    color: #6E4CCC;
+    color: $color_text_second_M--2;
 }
 
 

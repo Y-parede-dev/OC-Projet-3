@@ -19,10 +19,13 @@
 .p_menu {
     margin: 24px 0 30px;
 }
+.title_menu_top_left, .title_menu_bottom_left {
+    font-family: 'Ubuntu', sans-serif;
+}
 
 .menu_top_left {
     font-family: 'Devonshire', cursive;
-    color: #3C1218;
+    color: $color_text_first_M;
     background-color: $color_back_first_M;
 }
 .menu_top_right {
@@ -31,22 +34,31 @@
     
 }
     .title_menu_top_right {
-        font-family: 'Croissant One', cursive;    
+        font-family: 'Croissant One', cursive;  
+        color: #C67412;  
     }
    
     .p_top_right {
-        @include gradient(.25turn, #C67412, #6E4CCC);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include gradient(.25turn, $color_text_second_M--1, $color_text_second_M--2);  
     }
 .menu_bottom_left {
     font-family: Arial, Helvetica, sans-serif;
     background-color: $color_back_third_M;
 }
+    .title_menu_bottom_left, .p_bottom_left {
+        @include gradient(.25turn, $color_text_third_M--1, $color_text_third_M--2 )
+    }
+    .p_bottom_left {
+        font-family: 'Dancing Script', cursive;
+    }
 .menu_bottom_right {
     font-family: Arial, Helvetica, sans-serif;
     background-color: $color_back_fourth_M;
 }
+    .title_menu_bottom_right, .p_bottom_right {
+        font-family: 'Kaushan Script', cursive;
+        @include gradient(.25turn, $color_text_fourth_M--1, $color_text_fourth_M--2)
+    }
 
 
 .container {
