@@ -11,10 +11,8 @@
 .title_first {
     text-align: center;
 }
-.menu_choice {
-    display: flex;
-    justify-content: space-between;
-    
+.title_first_bottom {
+    margin: 0;
 }
 .aside_menu_top_left {
     display: flex;
@@ -38,7 +36,8 @@
         font-size: 3.5em;
     }
     .title_first_bottom {
-        margin: 0;
+        margin: -0.62% 0 8.2% ;
+        font-size: 4em;
     }
     .img_note_musique_inside_menu {
         width: 7.5%; height: auto;
@@ -53,18 +52,11 @@
         margin: 4% 0 9.5%;
     }
 
-    .aside_menu_top_left {
-        margin: 0 10%;
-    } 
-        .title_first_bottom {
-            margin: -0.62% 0 8.2% ;
-            font-size: 4em;
-        }
-        .img_note_musique_inside_menu_bottom {
-            margin: $margin--img_music;
-            width: $seize--img_music;
-            height: $seize--img_music;
-        }
+    .img_note_musique_inside_menu_bottom {
+        margin: $margin--img_music;
+        width: $seize--img_music;
+        height: $seize--img_music;
+    }
 }
 @media screen and (min-width: 1000px) and (max-width: 1400px) {
   
@@ -72,13 +64,13 @@
         width:30%; height: 10%;
         margin: 2% 0 ;
     }
-    
     .title_first_inside {
         margin: .9% 0 6%;
         font-size: 1.99em;
     }
     .title_first_bottom {
-        margin: 0;
+        margin: -1.2% 0 8.2% ;
+        font-size: 3em;
     }
     .img_note_musique_inside_menu {
         width: 7.5%; height: auto;
@@ -92,25 +84,14 @@
     .container_menu_choice {
         margin: 4% 0 9.5%;
     }
-        
-   
-       
-    .aside_menu_top_left {
-        margin: 0 10%;
-    } 
-
-        .title_first_bottom {
-            margin: -1.2% 0 8.2% ;
-            font-size: 3em;
-        }
-        .img_note_musique_inside_menu_bottom {
-            margin: $margin--img_music;
-            width: $seize--img_music;
-            height: $seize--img_music;
-        }
+    .img_note_musique_inside_menu_bottom {
+        margin: $margin--img_music;
+        width: $seize--img_music;
+        height: $seize--img_music;
+    }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
- 
+
     .img_barre_menu_top_left { 
         width:30%; height: 10%;
         margin: 2% 0 ;
@@ -120,11 +101,11 @@
         font-size: 1.99em;
     }
     .title_first_bottom {
-        margin: 0;
+        margin: -1% 0 8.2% ;
+        font-size: 2.5em;
     }
     .img_note_musique_inside_menu {
         width: 7.5%; height: auto;
-
         margin: 6% 46.5% 0;
     }
     .title_menu_choice {
@@ -134,20 +115,11 @@
     .container_menu_choice {
         margin: 4% 0 9.5%;
     }
-        
-       
-    .aside_menu_top_left {
-        margin: 0 10%;
-    } 
-        .img_note_musique_inside_menu_bottom {
-            margin: $margin--img_music;
-            width: $seize--img_music;
-            height: $seize--img_music;
-        }
-        .title_first_bottom {
-            margin: -1% 0 8.2% ;
-            font-size: 2.5em;
-        }
+    .img_note_musique_inside_menu_bottom {
+        margin: $margin--img_music;
+        width: $seize--img_music;
+        height: $seize--img_music;
+    }
 }
 @media all and (max-width: 800px) {
 
@@ -164,7 +136,8 @@
         font-size: 1.99em;
     }
     .title_first_bottom {
-        margin: 0;
+        margin: .38% 0 8.2% ;
+        font-size: 2em;
     }
     .img_note_musique_inside_menu {
         width: 7.5%; height: auto;
@@ -178,23 +151,12 @@
     .container_menu_choice {
         margin: 4% 0 9.5%;
     }
-        
-  
-        .menu_choice_plate {
-            width: 70%;
-        }
-       
-    .aside_menu_top_left {
-        margin: 0 10%;
-    } 
-     
-        .title_first_bottom {
-            margin: .38% 0 8.2% ;
-            font-size: 2em;
-        }
-        .img_note_musique_inside_menu_bottom {
-            margin: $margin--img_music;
-            width: $seize--img_music;
-            height: $seize--img_music;
-        }
+    .menu_choice_plate {
+        width: 70%;
+    }
+    .img_note_musique_inside_menu_bottom {
+        margin: $margin--img_music;
+        width: $seize--img_music;
+        height: $seize--img_music;
+    }
 }

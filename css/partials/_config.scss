@@ -3,16 +3,21 @@
 $color_back :#579C87;
 $color_text :#FCCA46;
 
-$color_back_first_M : #FCDFDB;;
+$color_back_first_M : #FCDFDB;
 $color_back_second_M : #FFF5FE;
 $color_back_third_M : #F9F9F9;
 $color_back_fourth_M : #FDFFFD;
 
 $color_text_first_M : #3C1218;
+
 $color_text_second_M--1 : #C67412;
-$color_text_second_M--2 : #6E4CCC;
+$color_text_second_M--2 : #A56799;
+$color_text_second_M--3 : #6E4CCC;
+
 $color_text_third_M--1 : #0228DD;
-$color_text_third_M--2 : #88C6F5;
+$color_text_third_M--2 : #0670F3;
+$color_text_third_M--3 : #88C6F5;
+
 $color_text_fourth_M--1 : #3D923A;
 $color_text_fourth_M--2 : #BEFF7F;
 
@@ -30,4 +35,56 @@ $seize--img_music : 5%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
+}
+@keyframes zoom_opacity {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+ 
+    to {
+        transform: scale(1.5);
+        opacity: 0.45;
+    }
+
+}
+@keyframes wiggle {
+    0% {transform: rotate(1deg);}
+    10% {transform: rotate(0deg);}
+    20% {transform: rotate(-1.5deg);}
+    30% {transform: rotate(0deg);}
+    40% {transform: rotate(0deg);}
+    50% {transform: rotate(-0deg);}
+    60% {transform: rotate(4deg);}
+    70% {transform: rotate(0deg);}
+    80% {transform: rotate(-6deg);}
+    90% {transform: rotate(0deg);} 
+    100% {transform: rotate(0deg);} 
+  }
+
+@keyframes dot {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(20px);
+        opacity: 1;
+    }
+}
+@mixin underline($color) {
+    opacity: 0;
+    left: -5px;
+    width: auto;
+    height: 7px;
+    margin: -1.5% -6% 0 ;
+    
+    border-radius: 10px 2px;
+    background-color: $color;
+    transform-origin: 0% 50%;
+    transition: ease-in-out 2.3s;
+    transform: scaleX(0);
 }

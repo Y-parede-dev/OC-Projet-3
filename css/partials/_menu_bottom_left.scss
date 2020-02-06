@@ -1,15 +1,4 @@
-@mixin color_title--third {
-    background: -webkit-gradient(linear, left top,right bottom, from(#0228DD), to(#339CF9));
-    background: -moz-gradient(linear, left top,right bottom, from(#0228DD), to(#339CF9));
-    background: -o-gradient(linear, left top,right bottom, from(#0228DD), to(#339CF9));
-    -webkit-background-clip: text;
-    -o-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    -o-text-fill-color: transparent;
-    
-}
+
 .main_bottom-L {
     background-color: #EDEFEF;
     font-family: 'Dancing Script', sans-serif;
@@ -22,11 +11,6 @@
     font-size: 5em;
     padding: 14% 0 5%;
 
-    
     @include gradient(.25turn, #0228DD, #88C6F5);
-  
 }
-.title_third_M {
-    font-size: 1.8em;
-    font-weight: 400;
-}
+

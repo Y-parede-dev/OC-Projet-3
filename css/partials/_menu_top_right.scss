@@ -14,10 +14,7 @@ main .title_second--inside {
     font-family: 'Croissant One', sans-serif;
     @include gradient(.25turn, $color_text_second_M--1, $color_text_second_M--2); 
 }
-.title_second_M {
-    text-align: center;
-    font-size: 2em;
-}
+
 .header--top, .header--middle, .header--bottom{
     display: flex;
     align-items: center;
@@ -30,10 +27,10 @@ main .title_second--inside {
 
 }
 .title_second_M--middle, .second_menu-middle {
-    color: #A56799;
-}
-.title_second_M--bottom, .second_menu--bottom {
     color: $color_text_second_M--2;
+}
+.title_second_M--bottom, .c_m_c_second_menu {
+    color: $color_text_second_M--3;
 }
 
 
