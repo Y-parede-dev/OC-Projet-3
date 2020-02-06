@@ -1,0 +1,15 @@
+.main_bottom-R {
+    padding: 0 0 10%;
+    font-family: 'Kaushan Script', cursive;
+}
+.fourth_menu--middle, .fourth_menu--top, .fourth_menu--bottom {
+    color: black;
+}
+.title_fourth_inside {
+    font-size: 6em;
+    text-align: center;
+    padding: 9% 0 0;
+    margin: 0 0 9%;
+    font-style: italic;
+    @include gradient(.25turn, $color_text_fourth_M--1, $color_text_fourth_M--2);
+}
