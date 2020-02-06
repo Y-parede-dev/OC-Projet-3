@@ -70,12 +70,38 @@
     background-color: $color_back;
     color: $color_text;
     transform-origin: top;
-
+    
     border-radius: 15px;
 
     text-align: center;
  
 }
+.one, .two, .three {
+    width: 10px;
+    height: 10px;
+    border: $color_text 1px solid;
+    border-radius: 50%;
+    background-color: $color_text;
+    margin: 0 0 0 5%;
+    
+}
+.one {
+    opacity: 0;
+    animation: dot 1.5s infinite;
+    animation-delay: 0.0s;
+}
+.two {
+    opacity: 0;
+    animation: dot 1.5s infinite;
+    animation-delay: 0.2s;
+}
+.three {
+    opacity: 0;
+    animation: dot 1.5s infinite;
+    animation-delay: 0.3s;
+}
+
+
 @media all and (min-width: 1400px) {
     .container_menu {
         display: flex;
