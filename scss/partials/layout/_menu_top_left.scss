@@ -1,13 +1,13 @@
 
- .main_top-L {
+.main_top-L {
     background-color: $color_back_first_M;
     box-shadow: $b-shadow;
     font-family: 'Devonshire', cursive;
- }
- .link_first {
-     color: $color_text_first-M;
- }
- 
+}
+.link_first {
+    color: $color_text_first-M;
+}
+
 .title_first {
     text-align: center;
 }
@@ -25,7 +25,7 @@
 
 
 @media all and (min-width: 1400px) {
-   
+    
     .img_barre_menu_top_left { 
         width:35%; height: 10%;
         margin: 2% 0 ;
@@ -41,7 +41,7 @@
     }
     .img_note_musique_inside_menu {
         width: 7.5%; height: auto;
-
+        
         margin: 6% 46.5% 0;
     }
     .title_menu_choice {
@@ -51,7 +51,7 @@
     .container_menu_choice {
         margin: 4% 0 9.5%;
     }
-
+    
     .img_note_musique_inside_menu_bottom {
         margin: $margin--img_music;
         width: $seize--img_music;
@@ -59,7 +59,7 @@
     }
 }
 @media screen and (min-width: 1000px) and (max-width: 1400px) {
-  
+    
     .img_barre_menu_top_left { 
         width:30%; height: 10%;
         margin: 2% 0 ;
@@ -74,7 +74,7 @@
     }
     .img_note_musique_inside_menu {
         width: 7.5%; height: auto;
-
+        
         margin: 6% 46.5% 0;
     }
     .title_menu_choice {
@@ -91,7 +91,7 @@
     }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-
+    
     .img_barre_menu_top_left { 
         width:30%; height: 10%;
         margin: 2% 0 ;
@@ -122,7 +122,7 @@
     }
 }
 @media all and (max-width: 800px) {
-
+    
     .img_barre_menu_top_left { 
         width:30%; height: 10%;
         margin: 2% 0 ;
@@ -141,7 +141,7 @@
     }
     .img_note_musique_inside_menu {
         width: 7.5%; height: auto;
-
+        
         margin: 6% 46.5% 0;
     }
     .title_menu_choice {

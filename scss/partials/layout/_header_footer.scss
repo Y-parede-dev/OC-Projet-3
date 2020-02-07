@@ -4,7 +4,7 @@
 header {
     width: 100%;
     margin: $margin_header;
-
+    
     color: $color_text;
     background-color: $color_back;
     
@@ -31,11 +31,11 @@ footer {
     background-color: $color_back;
     
 }
-    footer a {
-        color: $color_text;
-        text-decoration: none;
-        font-weight: bold;
-    }
+footer a {
+    color: $color_text;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 .contactez-nous {
     display: flex;
@@ -52,7 +52,7 @@ footer {
         font-size: 1.8em;
         padding: .7% 2.5%;
     }
-   
+    
 }
 @media screen and (min-width: 1000px) and (max-width: 1400px) {
     header {
@@ -71,7 +71,7 @@ footer {
         font-size: 1.3em;
     }
     footer a {
-       
+        
         font-size: 1.2em;
         padding: 1.2% 2%;
     }

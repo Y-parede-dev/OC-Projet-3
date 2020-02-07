@@ -416,7 +416,11 @@ main {
   padding: 0 0 10%; }
 
 article {
-  margin: 1% 10% 7%; }
+  margin: 1% 10% 7%;
+  font-size: 2.15em; }
+  @media screen and (max-width: 599px) {
+    article {
+      font-size: 3.15em; } }
 
 .title_first {
   margin: 5.35% 0 2.2%;

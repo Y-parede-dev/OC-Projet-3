@@ -1,6 +1,7 @@
 
 $font-size: (xl: 7em, l: 5em, m:3.5em, s:1.5em);
 
+
 $color_back :#579C87;
 $color_text :#FCCA46;
 
@@ -22,6 +23,8 @@ $color_text_third_M--3 : #88C6F5;
 $color_text_fourth_M--1 : #3D923A;
 $color_text_fourth_M--2 : #BEFF7F;
 
+//essayer de rendre c'est variable plus claire 
+
 $margin_menu-XL : 0 17.5% 17%;
 $width_menu-XL : 65%;
 $margin_header: 0;
@@ -30,6 +33,14 @@ $b-shadow: 0 2px 8.5px 1px rgba(0,0,0,0.175);
 $margin--img_music : 0 .7% 2.5% 0;
 $seize--img_music : 5%;
 
+
+// breakpoints cree reste a les utilisee 
+$breakpoints:(
+mobile: 599px,
+tablette: 799px,
+pc: 1299px,
+pc-max: 1920,
+);
 
 @mixin gradient($rotate, $color--1, $color--2) {
     background: linear-gradient($rotate, $color--1, $color--2);
@@ -42,12 +53,12 @@ $seize--img_music : 5%;
         transform: scale(1);
         opacity: 1;
     }
- 
+    
     to {
         transform: scale(1.5);
         opacity: 0.45;
     }
-
+    
 }
 @keyframes wiggle {
     0% {transform: rotate(1deg);}
@@ -61,7 +72,7 @@ $seize--img_music : 5%;
     80% {transform: rotate(-6deg);}
     90% {transform: rotate(0deg);} 
     100% {transform: rotate(0deg);} 
-  }
+}
 
 @keyframes dot {
     0% {

@@ -4,8 +4,20 @@ main {
     box-shadow: $b-shadow;
     padding: 0 0 10%;
 }
+
+
+@mixin mobile-only {
+    @media screen and (max-width: map-get($breakpoints, mobile )){
+        @content;
+    }
+}
 article {
     margin:1% 10% 7%;
+    font-size: 2.15em;
+    @include mobile-only{
+        font-size: 3.15em;
+    }
+    
 }
 .title_first {
     margin: 5.35% 0 2.2%;
@@ -32,6 +44,9 @@ article {
     font-size: 1.8em;
 }
 
+
+
+
 @media screen and (min-width: 1150px) and (max-width: 1520px) {
     .title_all {
         font-size: 2em;
@@ -41,7 +56,7 @@ article {
     }
 }
 @media screen and (min-width: 800px) and (max-width: 1150px) {
-
+    
     .title_all {
         font-size: 1.5em;
     }
