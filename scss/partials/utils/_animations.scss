@@ -45,7 +45,7 @@
 }
 
 .title_all {
-    font-size: 2em;
+    font-size: map-get($font-size, l);
     margin: 0;
     &:hover + .underline {
         opacity: 1;

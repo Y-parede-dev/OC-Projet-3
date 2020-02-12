@@ -82,7 +82,7 @@
     border: $color_text 1px solid;
     border-radius: 50%;
     background-color: $color_text;
-    margin: 0 0 0 5%;
+    margin: 6% 0 0 5%;
     
 }
 .one {
@@ -102,19 +102,19 @@
 }
 
 
-@media all and (min-width: 1400px) {
+@media all and (min-width: map-get($breakpoints, pc-max )) {
     .container_menu {
         display: flex;
         margin: 6% 0;
     }
     .menu {
-        width: 25%;
-        padding: 11% 0;
-        font-size: 150%;
+        width: 39%;
+        padding: 17% 0;
+        font-size: map-get($font-size, m);
     }
     
     .menu_bottom {
-        padding: 12.75% 0;
+        padding: 17.75% 0;
     }
     .img_menu {
         width: 12%;
@@ -122,24 +122,27 @@
     }
     .menu_top_left, .menu_bottom_left {
         
-        margin: 0 6% 0 22%; 
+        margin: 0 6% 0 8%; 
     }
     .menu_top_right, .menu_bottom_right {
         
-        margin: 0 22% 0 0; 
+        margin: 0 8% 0 0; 
         
     }
     .container {
-        width: 18%;
-        margin: 0 41% 10%;
+        width: 45%;
+        margin: 0 28% 10%;
         
-        font-size: 1.8em;
+        font-size: map-get($font-size, lm);
+    }
+    .container h3 {
+        margin: 3% 2%;
     }
     .container p {
         margin: 3% 0;
     }
 }
-@media screen and (min-width: 1000px) and (max-width: 1400px) {
+@media screen and (min-width: 1000px) and (max-width: map-get($breakpoints, pc-max)) {
     .container_menu {
         display: flex;
         margin: 6% 0;

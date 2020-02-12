@@ -1,7 +1,7 @@
+//map
+$font-size: (xxl: 7em, xl: 6em, l:5em, lm:4em, m:3.5em, ms:3em, s:2em ,xs:1.5em);
 
-$font-size: (xl: 7em, l: 5em, m:3.5em, s:1.5em);
-
-
+//variables
 $color_back :#579C87;
 $color_text :#FCCA46;
 
@@ -25,8 +25,8 @@ $color_text_fourth_M--2 : #BEFF7F;
 
 //essayer de rendre c'est variable plus claire 
 
-$margin_menu-XL : 0 17.5% 17%;
-$width_menu-XL : 65%;
+$margin_menu-XL : 0 8.75% 17%;
+$width_menu-XL : 83%;
 $margin_header: 0;
 $b-shadow: 0 2px 8.5px 1px rgba(0,0,0,0.175);
 
@@ -36,10 +36,10 @@ $seize--img_music : 5%;
 
 // breakpoints cree reste a les utilisee 
 $breakpoints:(
-mobile: 599px,
-tablette: 799px,
-pc: 1299px,
-pc-max: 1920,
+mobile: 600px,
+tablette: 768px,
+pc: 992px,
+pc-max: 1200px,
 );
 
 @mixin gradient($rotate, $color--1, $color--2) {

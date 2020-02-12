@@ -24,7 +24,7 @@
 }
 
 
-@media all and (min-width: 1400px) {
+@media all and (min-width: map-get($breakpoints, pc-max)) {
     
     .img_barre_menu_top_left { 
         width:35%; height: 10%;
@@ -33,11 +33,11 @@
     
     .title_first_inside {
         margin: .9% 0 6%;
-        font-size: 3.5em;
+        font-size: map-get($font-size, xl);
     }
     .title_first_bottom {
-        margin: -0.62% 0 8.2% ;
-        font-size: 4em;
+        margin: 0% 1% 8.2% ;
+        font-size: map-get($font-size, l);
     }
     .img_note_musique_inside_menu {
         width: 7.5%; height: auto;
@@ -58,7 +58,7 @@
         height: $seize--img_music;
     }
 }
-@media screen and (min-width: 1000px) and (max-width: 1400px) {
+@media screen and (min-width: map-get($breakpoints, pc )) and (max-width: map-get($breakpoints, pc-max)) {
     
     .img_barre_menu_top_left { 
         width:30%; height: 10%;
@@ -90,7 +90,7 @@
         height: $seize--img_music;
     }
 }
-@media screen and (min-width: 800px) and (max-width: 1000px) {
+@media screen and (min-width: map-get($breakpoints, tablette )) and (max-width: map-get($breakpoints, pc )) {
     
     .img_barre_menu_top_left { 
         width:30%; height: 10%;
@@ -121,7 +121,7 @@
         height: $seize--img_music;
     }
 }
-@media all and (max-width: 800px) {
+@media all and (max-width: map-get($breakpoints, mobile )) {
     
     .img_barre_menu_top_left { 
         width:30%; height: 10%;
