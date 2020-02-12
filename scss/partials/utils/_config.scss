@@ -1,5 +1,5 @@
 //map
-$font-size: (xxl: 7em, xl: 6em, l:5em, lm:4em, m:3.5em, ms:3em, s:2em ,xs:1.5em);
+$font-size: (xxl: 7em, xl: 6em, l:5em, lm:4em, m:3.5em, ms:3em, s:2.5em , xs:2em,xxs:1.5em);
 
 //variables
 $color_back :#579C87;
@@ -22,6 +22,25 @@ $color_text_third_M--3 : #88C6F5;
 
 $color_text_fourth_M--1 : #3D923A;
 $color_text_fourth_M--2 : #BEFF7F;
+
+
+$colors:(
+    back: #579C87,
+    txt: #FCCA46,
+    back--first: #FCDFDB,
+    back--second: #FFF5FE,
+    back--third: #F9F9F9,
+    back--fourth: #FDFFFD,
+    txt--first: #3C1218,
+    txt--second_1: #C67412,
+    txt--second_2: #A56799,
+    txt--second_3: #6E4CCC,
+    txt--third_1: #0228DD,
+    txt--third_2: #0670F3,
+    txt--third_3: #88C6F5,
+    txt--fourth_1: #3D923A,
+    txt--fourth_2: #BEFF7F,
+);
 
 //essayer de rendre c'est variable plus claire 
 

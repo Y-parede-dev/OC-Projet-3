@@ -6,6 +6,9 @@
 .third_menu--top, .third_menu--middle, .third_menu--bottom {
     color: #272727;
 }
+.title_third_M {
+    font-size: map-get($font-size, lm);
+}
 .title_third_inside {
     text-align: center;
     font-size: 5em;

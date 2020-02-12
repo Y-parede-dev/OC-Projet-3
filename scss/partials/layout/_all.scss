@@ -4,16 +4,17 @@ main {
     box-shadow: $b-shadow;
     padding: 0 0 10%;
 }
-
-
-@mixin mobile-only {
-    @media screen and (max-width: map-get($breakpoints, mobile )){
-        @content;
-    }
-}
 article {
 
     margin:1% 10% 7%;
+}
+.header--top, .header--middle, .header--bottom, .menu_choice {
+    display: flex;
+    justify-content: space-between;
+}
+.header--top, .header--middle, .header--bottom{
+    align-items: center;
+    margin: 0 0 4%;
 }
 .title_first {
     margin: 5.35% 0 2.2%;
@@ -25,23 +26,17 @@ article {
     margin: 0 -8%;
 }
 .menu_choice {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    
+    margin: 0;   
 }
 .menu_price {
     font-weight: bold;
 }
 .menu_choice_plate, .menu_price {
-    margin: 10px 0;
+    margin: 15px 0;
 }
 .menu_choice_plate,.menu_price{
-    font-size: map-get($font-size, ms);
+    font-size: map-get($font-size, s);
 }
-
-
-
 
 @media screen and (min-width: 1150px) and (max-width: 1520px) {
     .title_all {

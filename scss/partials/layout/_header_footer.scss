@@ -49,6 +49,7 @@ footer a {
         font-size: map-get($font-size , lm );
     }
     footer a {
+        width: fit-content;
         font-size: map-get($font-size, m);
         padding: 1.7% 2.5%;
     }
