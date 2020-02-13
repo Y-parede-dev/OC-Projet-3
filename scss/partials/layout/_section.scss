@@ -6,6 +6,11 @@
 .title_menu_all_capitalize {
     text-transform: uppercase;
 }
+.container_menu {
+    display: flex;
+    margin: 6% 0;
+    width: 100%;  
+}
 .menu {
     font-family: 'Devonshire', cursive;
     cursor: pointer;
@@ -47,7 +52,6 @@
 }
 .menu--fourth {
     font-family: Arial, Helvetica, sans-serif;
-
 }
 .title_menu_bottom_right, .p_bottom_right {
     font-family: 'Kaushan Script', cursive;
@@ -55,14 +59,13 @@
 }
 .container {
     display: flex;
-    justify-content: center;;
+    justify-content: center;
     text-transform: capitalize;
     background-color: $color_back;
     color: $color_text;
     transform-origin: top;
     border-radius: 15px;
-    text-align: center;
-    
+    text-align: center; 
 }
 .one, .two, .three {
     width: 10px;
@@ -70,28 +73,20 @@
     border: $color_text 1px solid;
     border-radius: 50%;
     background-color: $color_text;
-    margin: 6% 0 0 3% 
-}
-.one {
+    margin: 6% 0 0 3%;
     opacity: 0;
     animation: dot 1.5s infinite;
+}
+.one {
     animation-delay: 0.0s;
 }
 .two {
-    opacity: 0;
-    animation: dot 1.5s infinite;
     animation-delay: 0.2s;
 }
 .three {
-    opacity: 0;
-    animation: dot 1.5s infinite;
     animation-delay: 0.3s;
 }
 @media all and (min-width: map-get($breakpoints, pc-max)) {
-    .container_menu {
-        display: flex;
-        margin: 6% 0;
-    }
     .menu {
         width: 39%;
         padding: 17% 0;
@@ -105,18 +100,14 @@
         margin: 0 44%;
     }
     .menu--first, .menu--third {
-        
         margin: 0 6% 0 8%; 
     }
     .menu--second, .menu--fourth {
-        
         margin: 0 8% 0 0; 
-        
     }
     .container {
         width: 45%;
         margin: 0 28% 10%;
-        
         font-size: map-get($font-size, lm);
     }
     .container h3 {
@@ -126,12 +117,7 @@
         margin: 3% 0;
     }
 }
-@media screen and (min-width: 1000px) and (max-width: map-get($breakpoints, pc-max)) {
-    .container_menu {
-        display: flex;
-        margin: 6% 0;
-        width: 100%;  
-    }
+@media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, pc-max)) {
     .menu {  
         width: 45%;
         padding: 14% 0;
@@ -159,7 +145,7 @@
         margin: 3% 0;
     }
 }
-@media all and (max-width: 1000px) {
+@media all and (max-width: map-get($breakpoints, mobile)) {
     .container_menu {
         display: flex;
         margin: 8% 0; 

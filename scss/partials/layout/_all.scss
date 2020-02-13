@@ -3,6 +3,8 @@ main {
     width: $width_menu-XL;
     box-shadow: $b-shadow;
     padding: 0 0 10%;
+}
+.main {
     @include back-color($back-colors);
 }
 article {
