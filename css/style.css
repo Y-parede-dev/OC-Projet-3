@@ -238,6 +238,36 @@ footer a {
   box-shadow: 0 2px 8.5px 1px rgba(0, 0, 0, 0.175);
   text-decoration: none;
   text-align: center; }
+  .menu--back {
+    background: #579C87; }
+  .menu--first {
+    background: #FCDFDB; }
+  .menu--second {
+    background: #FFF5FE; }
+  .menu--third {
+    background: #F9F9F9; }
+  .menu--fourth {
+    background: #FDFFFD; }
+  .menu--txt {
+    color: #FCCA46; }
+  .menu--first {
+    color: #3C1218; }
+  .menu--second_1 {
+    color: #C67412; }
+  .menu--second_2 {
+    color: #A56799; }
+  .menu--second_3 {
+    color: #6E4CCC; }
+  .menu--third_1 {
+    color: #0228DD; }
+  .menu--third_2 {
+    color: #0670F3; }
+  .menu--third_3 {
+    color: #88C6F5; }
+  .menu--fourth_1 {
+    color: #3D923A; }
+  .menu--fourth_2 {
+    color: #0670F3; }
 
 .p_menu {
   margin: 24px 0 30px; }
@@ -245,14 +275,11 @@ footer a {
 .title_menu_top_left, .title_menu_bottom_left {
   font-family: 'Ubuntu', sans-serif; }
 
-.menu_top_left {
-  font-family: 'Devonshire', cursive;
-  color: #3C1218;
-  background-color: #FCDFDB; }
+.menu--first {
+  font-family: 'Devonshire', cursive; }
 
-.menu_top_right {
-  font-family: 'Croissant One', cursive;
-  background-color: #FFF5FE; }
+.menu--second {
+  font-family: 'Croissant One', cursive; }
 
 .title_menu_top_right {
   font-family: 'Croissant One', cursive;
@@ -263,9 +290,8 @@ footer a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-.menu_bottom_left {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #F9F9F9; }
+.menu--third {
+  font-family: Arial, Helvetica, sans-serif; }
 
 .title_menu_bottom_left, .p_bottom_left {
   background: linear-gradient(0.25turn, #0228DD, #0670F3);
@@ -275,9 +301,8 @@ footer a {
 .p_bottom_left {
   font-family: 'Dancing Script', cursive; }
 
-.menu_bottom_right {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #FDFFFD; }
+.menu--fourth {
+  font-family: Arial, Helvetica, sans-serif; }
 
 .title_menu_bottom_right, .p_bottom_right {
   font-family: 'Kaushan Script', cursive;
@@ -328,17 +353,17 @@ footer a {
     padding: 17% 0;
     font-size: 3.5em; }
 
-  .menu_bottom {
+  .menu--third, .menu--fourth {
     padding: 17.75% 0; }
 
   .img_menu {
     width: 12%;
     margin: 0 44%; }
 
-  .menu_top_left, .menu_bottom_left {
+  .menu--first, .menu--third {
     margin: 0 6% 0 8%; }
 
-  .menu_top_right, .menu_bottom_right {
+  .menu--second, .menu--fourth {
     margin: 0 8% 0 0; }
 
   .container {
@@ -362,17 +387,17 @@ footer a {
     padding: 14% 0;
     font-size: 150%; }
 
-  .menu_bottom {
+  .menu--third, .menu--fourth {
     padding: 16.492% 0; }
 
   .img_menu {
     width: 12%;
     margin: 0 44%; }
 
-  .menu_top_left, .menu_bottom_left {
+  .menu--first, .menu--third {
     margin: 0 6% 0 11.25%; }
 
-  .menu_top_right, .menu_bottom_right {
+  .menu--second, .menu--fourth {
     margin: 0 11.25% 0 0; }
 
   .container {
@@ -392,17 +417,17 @@ footer a {
     padding: 17% 0;
     font-size: 100%; }
 
-  .menu_bottom {
+  .menu--third, .menu--fourth {
     padding: 19.785% 0; }
 
   .img_menu {
     width: 12%;
     margin: 0 44%; }
 
-  .menu_top_left, .menu_bottom_left {
+  .menu--first, .menu--third {
     margin: 0 8% 0 6%; }
 
-  .menu_top_right, .menu_bottom_right {
+  .menu--second, .menu--fourth {
     margin: 0 6% 0 0; }
 
   .container {
@@ -463,8 +488,18 @@ article {
 
   .barre {
     width: 25%; } }
+.main--back {
+  background: #579C87; }
+.main--first {
+  background: #FCDFDB; }
+.main--second {
+  background: #FFF5FE; }
+.main--third {
+  background: #F9F9F9; }
+.main--fourth {
+  background: #FDFFFD; }
+
 .main_top-L {
-  background-color: #FCDFDB;
   box-shadow: 0 2px 8.5px 1px rgba(0, 0, 0, 0.175);
   font-family: 'Devonshire', cursive; }
 

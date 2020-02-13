@@ -1,7 +1,7 @@
 
 .main_top-R {
     
-    background-color: $color_back_second_M;
+    background-color: $color_back_second;
     
     padding: 0 0 10%;
     
@@ -14,8 +14,6 @@ main .title_second--inside {
     font-family: 'Croissant One', sans-serif;
     @include gradient(.25turn, $color_text_second_M--1, $color_text_second_M--2); 
 }
-
-
 
 .title_second_M--top, .second_menu-top {
     color: $color_text_second_M--1;

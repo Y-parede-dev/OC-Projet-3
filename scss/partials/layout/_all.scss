@@ -3,9 +3,9 @@ main {
     width: $width_menu-XL;
     box-shadow: $b-shadow;
     padding: 0 0 10%;
+    @include back-color($back-colors);
 }
 article {
-
     margin:1% 10% 7%;
 }
 .header--top, .header--middle, .header--bottom, .menu_choice {

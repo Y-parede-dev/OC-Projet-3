@@ -14,36 +14,30 @@
     box-shadow: $b-shadow;
     text-decoration: none;
     text-align: center;
+    @include back_color($back_colors);
+    @include txt_color($txt_colors);
 }
-
 .p_menu {
     margin: 24px 0 30px;
 }
 .title_menu_top_left, .title_menu_bottom_left {
     font-family: 'Ubuntu', sans-serif;
 }
-
-.menu_top_left {
+.menu--first {
     font-family: 'Devonshire', cursive;
-    color: $color_text_first_M;
-    background-color: $color_back_first_M;
 }
-.menu_top_right {
+.menu--second {
     font-family: 'Croissant One', cursive;
-    background-color: $color_back_second_M;
-    
 }
 .title_menu_top_right {
     font-family: 'Croissant One', cursive;  
     color: #C67412;  
 }
-
 .p_top_right {
     @include gradient(.25turn, $color_text_second_M--1, $color_text_second_M--2);  
 }
-.menu_bottom_left {
+.menu--third {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: $color_back_third_M;
 }
 .title_menu_bottom_left, .p_bottom_left {
     @include gradient(.25turn, $color_text_third_M--1, $color_text_third_M--2 )
@@ -51,28 +45,22 @@
 .p_bottom_left {
     font-family: 'Dancing Script', cursive;
 }
-.menu_bottom_right {
+.menu--fourth {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: $color_back_fourth_M;
+
 }
 .title_menu_bottom_right, .p_bottom_right {
     font-family: 'Kaushan Script', cursive;
     @include gradient(.25turn, $color_text_fourth_M--1, $color_text_fourth_M--2)
 }
-
-
 .container {
     display: flex;
     justify-content: center;;
-    
     text-transform: capitalize;
-    
     background-color: $color_back;
     color: $color_text;
     transform-origin: top;
-    
     border-radius: 15px;
-    
     text-align: center;
     
 }
@@ -82,8 +70,7 @@
     border: $color_text 1px solid;
     border-radius: 50%;
     background-color: $color_text;
-    margin: 6% 0 0 3%;
-    
+    margin: 6% 0 0 3% 
 }
 .one {
     opacity: 0;
@@ -100,9 +87,7 @@
     animation: dot 1.5s infinite;
     animation-delay: 0.3s;
 }
-
-
-@media all and (min-width: map-get($breakpoints, pc-max )) {
+@media all and (min-width: map-get($breakpoints, pc-max)) {
     .container_menu {
         display: flex;
         margin: 6% 0;
@@ -112,19 +97,18 @@
         padding: 17% 0;
         font-size: map-get($font-size, m);
     }
-    
-    .menu_bottom {
+    .menu--third, .menu--fourth {
         padding: 17.75% 0;
     }
     .img_menu {
         width: 12%;
         margin: 0 44%;
     }
-    .menu_top_left, .menu_bottom_left {
+    .menu--first, .menu--third {
         
         margin: 0 6% 0 8%; 
     }
-    .menu_top_right, .menu_bottom_right {
+    .menu--second, .menu--fourth {
         
         margin: 0 8% 0 0; 
         
@@ -146,38 +130,29 @@
     .container_menu {
         display: flex;
         margin: 6% 0;
-        width: 100%;
-        
+        width: 100%;  
     }
-    .menu {
-        
+    .menu {  
         width: 45%;
         padding: 14% 0;
         font-size: 150%;
-        
     }
-    .menu_bottom {
+    .menu--third, .menu--fourth {
         padding: 16.492% 0;
     }
     .img_menu {
         width: 12%;
         margin: 0 44%;
-        
     }
-    
-    .menu_top_left, .menu_bottom_left {
-        
+    .menu--first, .menu--third {  
         margin: 0 6% 0 11.25%; 
     }
-    .menu_top_right, .menu_bottom_right {
-        
+    .menu--second, .menu--fourth {
         margin: 0 11.25% 0 0; 
-        
     }
     .container {
         width: 25%;
-        margin: 0 37.5% 10%;
-        
+        margin: 0 37.5% 10%; 
         font-size: 1.8em;
     }
     .container>p {
@@ -187,38 +162,30 @@
 @media all and (max-width: 1000px) {
     .container_menu {
         display: flex;
-        margin: 8% 0;
-        
+        margin: 8% 0; 
     }
     .menu {
-        
         width: 50%;
         padding: 17% 0;
         font-size: 100%;
     }
-    .menu_bottom {
+    .menu--third, .menu--fourth {
         padding: 19.785% 0;
     }
     .img_menu {
         width: 12%;
         margin: 0 44%;
-        
-    }
-    
-    .menu_top_left, .menu_bottom_left {
-        
+    }  
+    .menu--first, .menu--third {    
         margin: 0 8% 0 6%; 
     }
-    .menu_top_right, .menu_bottom_right {
-        
-        margin: 0 6% 0 0; 
-        
+    .menu--second, .menu--fourth {   
+        margin: 0 6% 0 0;    
     }
     .container {
         width: 40%;
         margin: 0 30% 18%;
-        border-radius: 15px;
-        
+        border-radius: 15px;   
         font-size: 1.8em;
     }
     .container p {
