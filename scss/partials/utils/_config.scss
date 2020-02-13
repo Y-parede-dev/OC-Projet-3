@@ -141,3 +141,40 @@ pc-max: 1200px,
     transition: ease-in-out 2.3s;
     transform: scaleX(0);
 }
+
+@mixin mobile-only {
+    @media all and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+@mixin mobile-tablette {
+    @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {
+        @content;
+    }
+}
+@mixin tablette-pc {
+    @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, pc)) {
+        @content;
+    }
+}
+@mixin pc-pc_max {
+    @media screen and (min-width: map-get($breakpoints, pc)) and (max-width: map-get($breakpoints, pc-max)) {
+        @content;
+    }
+}
+@mixin pc_max-only {
+    @media all and (min-width: map-get($breakpoints, pc-max)){
+        @content;
+    }
+}
+@mixin mobile-pc {
+    @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, pc)) {
+        @content;
+    }
+}
+@mixin tablette-pc_max {
+    @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, pc-max)){
+        @content;
+    }
+
+}

@@ -20,14 +20,9 @@ main .title_second--inside {
 .title_second_M--bottom, .c_m_c_second_menu {
     color: $color_text_second_M--3;
 }
-@mixin pc-max {
-    @media all and (min-width: map-get($breakpoints, pc-max)){
-        @content;
-    }
-}
+
 .title_second_M {
-    @include pc-max {
-        font-size: 3rem;
-    }
+    font-size: 3rem;
+ 
 }
 

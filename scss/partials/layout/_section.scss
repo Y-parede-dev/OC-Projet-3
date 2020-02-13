@@ -9,7 +9,10 @@
 .container_menu {
     display: flex;
     margin: 6% 0;
-    width: 100%;  
+    width: 100%;
+    @include mobile-only(){
+        margin: 8% 0;  
+    }
 }
 .menu {
     font-family: 'Devonshire', cursive;
@@ -19,9 +22,37 @@
     box-shadow: $b-shadow;
     text-decoration: none;
     text-align: center;
+    padding: 17% 0;
+    width: 50%;
+
     @include back_color($back_colors);
     @include txt_color($txt_colors);
+
+    @include mobile-only(){
+        font-size: map-get($font_size , ms); 
+    }
+    @include mobile-tablette(){
+        font-size: map-get($font-size, xxs) +0.3em;
+    }
+    @include tablette-pc(){
+        width: 45%;
+        padding: 14% 0;
+        font-size: map-get($font-size, xxs) +0.3em;
+    }
+    @include pc-pc_max(){
+        width: 45%;
+        padding: 14% 0;
+        font-size: map-get($font-size, xs);
+    }
+    @include pc_max-only(){
+        width: 39%;
+        font-size: map-get($font-size, s);
+    }
 }
+.img_menu {
+    width: 12%;
+    margin: 0 44%;
+}  
 .p_menu {
     margin: 24px 0 30px;
 }
@@ -34,6 +65,17 @@
 .menu--second {
     font-family: 'Croissant One', cursive;
 }
+.menu--first, .menu--third {
+    margin: 0 6% 0 8%;
+
+}
+.menu--second, .menu--fourth {
+    margin: 0 8% 0 0;
+    
+}
+.menu--third, .menu--fourth {
+    padding: 17.75% 0;
+}
 .title_menu_top_right {
     font-family: 'Croissant One', cursive;  
     color: #C67412;  
@@ -43,6 +85,9 @@
 }
 .menu--third {
     font-family: Arial, Helvetica, sans-serif;
+    @include tablette-pc() {
+        padding: 16.492% 0;
+    }
 }
 .title_menu_bottom_left, .p_bottom_left {
     @include gradient(.25turn, $color_text_third_M--1, $color_text_third_M--2 )
@@ -65,7 +110,23 @@
     color: $color_text;
     transform-origin: top;
     border-radius: 15px;
-    text-align: center; 
+    text-align: center;
+    font-size: map-get($font-size, xxs) +0.3em;
+    width: auto;
+    @include mobile-pc() {
+        margin: 13% 24.5% 21%;
+        font-size: map-get($font-size, xs);
+    }
+    @include pc-pc_max(){
+        margin: 11% 30.5% 21%;
+    } 
+    @include pc_max-only() {
+        font-size: map-get($font-size, m);
+        margin: 11% 28.5% 21%;
+    }
+}
+.container h3 {
+    margin: 3% 2%;
 }
 .one, .two, .three {
     width: 10px;
@@ -76,6 +137,19 @@
     margin: 6% 0 0 3%;
     opacity: 0;
     animation: dot 1.5s infinite;
+    @include mobile-pc {
+        margin: 3% 0 0 3%;
+    }
+    @include pc-pc_max {
+        width: 8px;
+        height: 8px;
+        margin: 2.5% 0 0 3%;
+    }
+    @include pc_max-only {
+        margin-top: 5%;
+        width: 15px;
+        height: 15px;
+    }
 }
 .one {
     animation-delay: 0.0s;
@@ -85,96 +159,4 @@
 }
 .three {
     animation-delay: 0.3s;
-}
-@media all and (min-width: map-get($breakpoints, pc-max)) {
-    .menu {
-        width: 39%;
-        padding: 17% 0;
-        font-size: map-get($font-size, m);
-    }
-    .menu--third, .menu--fourth {
-        padding: 17.75% 0;
-    }
-    .img_menu {
-        width: 12%;
-        margin: 0 44%;
-    }
-    .menu--first, .menu--third {
-        margin: 0 6% 0 8%; 
-    }
-    .menu--second, .menu--fourth {
-        margin: 0 8% 0 0; 
-    }
-    .container {
-        width: 45%;
-        margin: 0 28% 10%;
-        font-size: map-get($font-size, lm);
-    }
-    .container h3 {
-        margin: 3% 2%;
-    }
-    .container p {
-        margin: 3% 0;
-    }
-}
-@media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, pc-max)) {
-    .menu {  
-        width: 45%;
-        padding: 14% 0;
-        font-size: 150%;
-    }
-    .menu--third, .menu--fourth {
-        padding: 16.492% 0;
-    }
-    .img_menu {
-        width: 12%;
-        margin: 0 44%;
-    }
-    .menu--first, .menu--third {  
-        margin: 0 6% 0 11.25%; 
-    }
-    .menu--second, .menu--fourth {
-        margin: 0 11.25% 0 0; 
-    }
-    .container {
-        width: 25%;
-        margin: 0 37.5% 10%; 
-        font-size: 1.8em;
-    }
-    .container>p {
-        margin: 3% 0;
-    }
-}
-@media all and (max-width: map-get($breakpoints, mobile)) {
-    .container_menu {
-        display: flex;
-        margin: 8% 0; 
-    }
-    .menu {
-        width: 50%;
-        padding: 17% 0;
-        font-size: 100%;
-    }
-    .menu--third, .menu--fourth {
-        padding: 19.785% 0;
-    }
-    .img_menu {
-        width: 12%;
-        margin: 0 44%;
-    }  
-    .menu--first, .menu--third {    
-        margin: 0 8% 0 6%; 
-    }
-    .menu--second, .menu--fourth {   
-        margin: 0 6% 0 0;    
-    }
-    .container {
-        width: 40%;
-        margin: 0 30% 18%;
-        border-radius: 15px;   
-        font-size: 1.8em;
-    }
-    .container p {
-        margin: 3% 0;
-    } 
 }
