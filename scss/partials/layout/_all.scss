@@ -7,8 +7,14 @@ main {
 .main {
     @include back-color($back-colors);
 }
-article {
+section {
     margin:1% 10% 7%;
+}
+li {
+    list-style-type: none;
+}
+.hidden_price {
+    display: none;
 }
 .header--top, .header--middle, .header--bottom, .menu_choice {
     display: flex;
@@ -28,7 +34,8 @@ article {
     margin: 0 -8%;
 }
 .menu_choice {
-    margin: 0;   
+    margin: 0; 
+    padding: 0; 
 }
 .menu_price {
     font-weight: bold;
@@ -37,12 +44,12 @@ article {
     margin: 15px 0;
 }
 .menu_choice_plate,.menu_price{
-    font-size: map-get($font-size, s);
+    font-size: map-get($font-size, xs);
 }
 
 @media screen and (min-width: 1150px) and (max-width: 1520px) {
     .title_all {
-        font-size: 2em;
+        font-size: map-get($font-size, xs);
     }
     .barre {
         width: 30%;
@@ -51,7 +58,7 @@ article {
 @media screen and (min-width: 800px) and (max-width: 1150px) {
     
     .title_all {
-        font-size: 1.5em;
+        font-size: map-get($font-size, xxs);
     }
     .barre {
         width: 25%;

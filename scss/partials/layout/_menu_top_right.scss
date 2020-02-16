@@ -22,7 +22,7 @@ main .title_second--inside {
 }
 
 .title_second_M {
-    font-size: 3rem;
+    font-size: map-get($font-size, s);
  
 }
 

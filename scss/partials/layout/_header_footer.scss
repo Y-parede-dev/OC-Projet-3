@@ -2,14 +2,16 @@
 /*----header-----*/
 
 header {
-    width: 100%;
     margin: $margin_header;
-    
-    color: $color_text;
+    width: 100%;
     background-color: $color_back;
     
     font-weight: bold;
     text-align: center;
+}
+.logo {
+    width: 30%;
+    align-items: center;
 }
 .hidden {
     text-decoration: none;
@@ -45,7 +47,7 @@ footer a {
 
 @media all and (min-width: map-get($breakpoints, pc-max )) {
     header {
-        padding: 1.3% 0;
+        padding: 1.5% 0 1%;
         font-size: map-get($font-size , lm);
     }
     footer a {
@@ -57,7 +59,7 @@ footer a {
 }
 @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, pc-max)) {
     header {
-        padding: 2.1% 0;
+        padding: 2.1% 0 .5%;
         font-size: map-get($font-size, m);
     }
     footer a {
@@ -68,7 +70,7 @@ footer a {
 }
 @media all and (max-width: map-get($breakpoints, mobile)) {
     header {
-        padding: 2.8% 0;
+        padding: 2.8% 0 .5%;
         font-size: map-get($font-size, ms);
     }
     footer a {

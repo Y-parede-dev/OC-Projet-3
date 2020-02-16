@@ -14,5 +14,5 @@
     @include gradient(.25turn, $color_text_fourth_M--1, $color_text_fourth_M--2);
 }
 .title_fourth_M {
-    font-size: map-get($font-size, m);
+    font-size: map-get($font-size, s);
 }
