@@ -7,9 +7,12 @@
     text-transform: uppercase;
 }
 .container_menu {
-    display: flex;
-    margin: 6% 0;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 9% 11% 0;
     @include mobile-only(){
         margin: 8% 0;  
     }
@@ -22,8 +25,8 @@
     box-shadow: $b-shadow;
     text-decoration: none;
     text-align: center;
-    padding: 17% 0;
-    width: 50%;
+    margin-bottom: 20%;
+    padding: 50% 0;
 
     @include back_color($back_colors);
     @include txt_color($txt_colors);
@@ -35,17 +38,16 @@
         font-size: map-get($font-size, xxs) +0.3em;
     }
     @include tablette-pc(){
-        width: 45%;
-        padding: 14% 0;
+     
         font-size: map-get($font-size, xxs) +0.3em;
     }
     @include pc-pc_max(){
-        width: 45%;
-        padding: 14% 0;
+  
+        
         font-size: map-get($font-size, xs);
     }
     @include pc_max-only(){
-        width: 39%;
+      
         font-size: map-get($font-size, s);
     }
 }
@@ -65,17 +67,6 @@
 .menu--second {
     font-family: 'Croissant One', cursive;
 }
-.menu--first, .menu--third {
-    margin: 0 6% 0 8%;
-
-}
-.menu--second, .menu--fourth {
-    margin: 0 8% 0 0;
-    
-}
-.menu--third, .menu--fourth {
-    padding: 17.75% 0;
-}
 .title_menu_top_right {
     font-family: 'Croissant One', cursive;  
     color: #C67412;  
@@ -85,9 +76,6 @@
 }
 .menu--third {
     font-family: Arial, Helvetica, sans-serif;
-    @include tablette-pc() {
-        padding: 16.492% 0;
-    }
 }
 .title_menu_bottom_left, .p_bottom_left {
     @include gradient(.25turn, $color_text_third_M--1, $color_text_third_M--2 )
@@ -102,6 +90,12 @@
     font-family: 'Kaushan Script', cursive;
     @include gradient(.25turn, $color_text_fourth_M--1, $color_text_fourth_M--2)
 }
+.menu--first, .menu--third {
+    margin-right: 10%;
+}
+.menu--second, .menu--fourth {
+    margin-left: 10%;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -114,15 +108,15 @@
     font-size: map-get($font-size, xxs) +0.3em;
     width: auto;
     @include mobile-pc() {
-        margin: 13% 24.5% 21%;
+        margin: 0% 24.5% 21%;
         font-size: map-get($font-size, xs);
     }
     @include pc-pc_max(){
-        margin: 11% 30.5% 21%;
+        margin: 0% 30.5% 21%;
     } 
     @include pc_max-only() {
         font-size: map-get($font-size, m);
-        margin: 11% 28.5% 21%;
+        margin: 0% 28.5% 21%;
     }
 }
 .container h3 {

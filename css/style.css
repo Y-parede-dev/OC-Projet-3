@@ -234,9 +234,12 @@ footer a {
   text-transform: uppercase; }
 
 .container_menu {
-  display: flex;
-  margin: 6% 0;
-  width: 100%; }
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  justify-content: space-between;
+  margin: 0;
+  padding: 9% 11% 0; }
   @media all and (max-width: 600px) {
     .container_menu {
       margin: 8% 0; } }
@@ -249,8 +252,8 @@ footer a {
   box-shadow: 0 2px 8.5px 1px rgba(0, 0, 0, 0.175);
   text-decoration: none;
   text-align: center;
-  padding: 17% 0;
-  width: 50%; }
+  margin-bottom: 20%;
+  padding: 50% 0; }
   .menu--back {
     background: #579C87; }
   .menu--first {
@@ -289,17 +292,12 @@ footer a {
       font-size: 1.8em; } }
   @media screen and (min-width: 768px) and (max-width: 992px) {
     .menu {
-      width: 45%;
-      padding: 14% 0;
       font-size: 1.8em; } }
   @media screen and (min-width: 992px) and (max-width: 1200px) {
     .menu {
-      width: 45%;
-      padding: 14% 0;
       font-size: 2em; } }
   @media all and (min-width: 1200px) {
     .menu {
-      width: 39%;
       font-size: 2.5em; } }
 
 .img_menu {
@@ -318,15 +316,6 @@ footer a {
 .menu--second {
   font-family: 'Croissant One', cursive; }
 
-.menu--first, .menu--third {
-  margin: 0 6% 0 8%; }
-
-.menu--second, .menu--fourth {
-  margin: 0 8% 0 0; }
-
-.menu--third, .menu--fourth {
-  padding: 17.75% 0; }
-
 .title_menu_top_right {
   font-family: 'Croissant One', cursive;
   color: #C67412; }
@@ -338,9 +327,6 @@ footer a {
 
 .menu--third {
   font-family: Arial, Helvetica, sans-serif; }
-  @media screen and (min-width: 768px) and (max-width: 992px) {
-    .menu--third {
-      padding: 16.492% 0; } }
 
 .title_menu_bottom_left, .p_bottom_left {
   background: linear-gradient(0.25turn, #0228DD, #0670F3);
@@ -359,6 +345,12 @@ footer a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
+.menu--first, .menu--third {
+  margin-right: 10%; }
+
+.menu--second, .menu--fourth {
+  margin-left: 10%; }
+
 .container {
   display: flex;
   justify-content: center;
@@ -372,15 +364,15 @@ footer a {
   width: auto; }
   @media screen and (min-width: 600px) and (max-width: 992px) {
     .container {
-      margin: 13% 24.5% 21%;
+      margin: 0% 24.5% 21%;
       font-size: 2em; } }
   @media screen and (min-width: 992px) and (max-width: 1200px) {
     .container {
-      margin: 11% 30.5% 21%; } }
+      margin: 0% 30.5% 21%; } }
   @media all and (min-width: 1200px) {
     .container {
       font-size: 3.5em;
-      margin: 11% 28.5% 21%; } }
+      margin: 0% 28.5% 21%; } }
 
 .container h3 {
   margin: 3% 2%; }
