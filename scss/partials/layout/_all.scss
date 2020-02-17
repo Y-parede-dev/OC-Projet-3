@@ -1,6 +1,5 @@
 main {
     margin: $margin_menu-XL;
-    width: $width_menu-XL;
     box-shadow: $b-shadow;
     padding: 0 0 10%;
 }
@@ -13,9 +12,7 @@ section {
 li {
     list-style-type: none;
 }
-.hidden_price {
-    display: none;
-}
+
 .header--top, .header--middle, .header--bottom, .menu_choice {
     display: flex;
     justify-content: space-between;
@@ -26,6 +23,7 @@ li {
 }
 .title_first {
     margin: 5.35% 0 2.2%;
+    text-align: center;
     font-size: map-get($font-size, xl)
 }
 .barre {
@@ -47,7 +45,7 @@ li {
     font-size: map-get($font-size, xs);
 }
 
-@media screen and (min-width: 1150px) and (max-width: 1520px) {
+@media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, pc-max)) {
     .title_all {
         font-size: map-get($font-size, xs);
     }
@@ -55,7 +53,7 @@ li {
         width: 30%;
     }
 }
-@media screen and (min-width: 800px) and (max-width: 1150px) {
+@media screen and (min-width: map-get($breakpoints, mobile)-300px) and (max-width: map-get($breakpoints, tablette)) {
     
     .title_all {
         font-size: map-get($font-size, xxs);

@@ -411,7 +411,6 @@ footer a {
 
 main {
   margin: 0 8.75% 17%;
-  width: 83%;
   box-shadow: 0 2px 8.5px 1px rgba(0, 0, 0, 0.175);
   padding: 0 0 10%; }
 
@@ -445,6 +444,7 @@ li {
 
 .title_first {
   margin: 5.35% 0 2.2%;
+  text-align: center;
   font-size: 6em; }
 
 .barre {
@@ -465,13 +465,13 @@ li {
 .menu_choice_plate, .menu_price {
   font-size: 2em; }
 
-@media screen and (min-width: 1150px) and (max-width: 1520px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .title_all {
     font-size: 2em; }
 
   .barre {
     width: 30%; } }
-@media screen and (min-width: 800px) and (max-width: 1150px) {
+@media screen and (min-width: 300px) and (max-width: 768px) {
   .title_all {
     font-size: 1.5em; }
 
@@ -484,147 +484,24 @@ li {
 .link_first {
   color: #3C1218; }
 
-.title_first {
-  text-align: center; }
+.img_note_musique_inside_menu {
+  width: 7.5%;
+  height: auto;
+  margin: 6% 46.5% 0; }
 
 .title_first_bottom {
+  font-size: 3.5em;
   margin: 0; }
-
-.aside_menu_top_left {
-  display: flex;
-  flex-direction: column; }
 
 .container_bottom_first_menu {
   display: flex;
   justify-content: center; }
 
-@media all and (min-width: 1200px) {
-  .img_barre_menu_top_left {
-    width: 35%;
-    height: 10%;
-    margin: 2% 0; }
+.img_note_musique_inside_menu_bottom {
+  margin: 0 0.7% 2.5% 0;
+  width: 5%;
+  height: 5%; }
 
-  .title_first_inside {
-    margin: .9% 0 6%;
-    font-size: 6em; }
-
-  .title_first_bottom {
-    margin: 0% 1% 8.2%;
-    font-size: 5em; }
-
-  .img_note_musique_inside_menu {
-    width: 7.5%;
-    height: auto;
-    margin: 6% 46.5% 0; }
-
-  .title_menu_choice {
-    margin: 0;
-    font-size: 1.5em; }
-
-  .container_menu_choice {
-    margin: 4% 0 9.5%; }
-
-  .img_note_musique_inside_menu_bottom {
-    margin: 0 0.7% 2.5% 0;
-    width: 5%;
-    height: 5%; } }
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  .img_barre_menu_top_left {
-    width: 30%;
-    height: 10%;
-    margin: 2% 0; }
-
-  .title_first_inside {
-    margin: .9% 0 6%;
-    font-size: 1.99em; }
-
-  .title_first_bottom {
-    margin: -1.2% 0 8.2%;
-    font-size: 3em; }
-
-  .img_note_musique_inside_menu {
-    width: 7.5%;
-    height: auto;
-    margin: 6% 46.5% 0; }
-
-  .title_menu_choice {
-    margin: 0;
-    font-size: 1.5em; }
-
-  .container_menu_choice {
-    margin: 4% 0 9.5%; }
-
-  .img_note_musique_inside_menu_bottom {
-    margin: 0 0.7% 2.5% 0;
-    width: 5%;
-    height: 5%; } }
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .img_barre_menu_top_left {
-    width: 30%;
-    height: 10%;
-    margin: 2% 0; }
-
-  .title_first_inside {
-    margin: .9% 0 6%;
-    font-size: 1.99em; }
-
-  .title_first_bottom {
-    margin: -1% 0 8.2%;
-    font-size: 2.5em; }
-
-  .img_note_musique_inside_menu {
-    width: 7.5%;
-    height: auto;
-    margin: 6% 46.5% 0; }
-
-  .title_menu_choice {
-    margin: 0;
-    font-size: 1.5em; }
-
-  .container_menu_choice {
-    margin: 4% 0 9.5%; }
-
-  .img_note_musique_inside_menu_bottom {
-    margin: 0 0.7% 2.5% 0;
-    width: 5%;
-    height: 5%; } }
-@media all and (max-width: 600px) {
-  .img_barre_menu_top_left {
-    width: 30%;
-    height: 10%;
-    margin: 2% 0; }
-
-  .title_first {
-    margin: 5.35% 0 2.2%;
-    font-size: 2.15em; }
-
-  .title_first_inside {
-    margin: .9% 0 6%;
-    font-size: 1.99em; }
-
-  .title_first_bottom {
-    margin: 0.38% 0 8.2%;
-    font-size: 2em; }
-
-  .img_note_musique_inside_menu {
-    width: 7.5%;
-    height: auto;
-    margin: 6% 46.5% 0; }
-
-  .title_menu_choice {
-    margin: 0;
-    font-size: 1.5em; }
-
-  .container_menu_choice {
-    margin: 4% 0 9.5%; }
-
-  .menu_choice_plate {
-    width: 70%; }
-
-  .img_note_musique_inside_menu_bottom {
-    margin: 0 0.7% 2.5% 0;
-    width: 5%;
-    height: 5%; } }
 .main_top-R {
   padding: 0 0 10%; }
 
