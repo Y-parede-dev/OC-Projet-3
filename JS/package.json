@@ -1,0 +1,32 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": ">>dans les référentiels vous trouverais mon travail, j'utilise les languages :\r                                                                             - HTML\r                                                                             - CSS\r                                                                             - SCSS\r > si vous êtes intéressée par un projet similaire vous pouvez me contacter à mon adress @mail : parede.yoan.amcs@gmail.com",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ../scss/style.scss:../css/style.css",
+    "autoprefix": "postcss ../css/style.css --use autoprefixer -d ../css/prefixed/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Y-parede-dev/OC-Projet-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserlist": [
+    "defaults",
+    "last 4 versions",
+    ">0.5%",
+    ""
+  ],
+  "bugs": {
+    "url": "https://github.com/Y-parede-dev/OC-Projet-3/issues"
+  },
+  "homepage": "https://github.com/Y-parede-dev/OC-Projet-3#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.0"
+  }
+}
