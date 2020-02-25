@@ -1,0 +1,70 @@
+@mixin back_color($back_colors){
+    @each $mod, $var in $back_colors { 
+        &--#{$mod}{
+            background: $var;
+        }
+    }
+}
+@mixin txt_color($txt_colors) {
+    @each $mod, $var in $txt_colors {
+        &--#{$mod}{
+            color: $var;
+        }
+    }
+}
+@mixin gradient($rotate, $color--1, $color--2) {
+    background: linear-gradient($rotate, $color--1, $color--2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+@mixin underline($color) {
+    opacity: 0;
+    left: -5px;
+    width: auto;
+    height: 7px;
+    margin: -1.5% -6% 0 ;
+    
+    border-radius: 10px 2px;
+    background-color: $color;
+    transform-origin: 0% 50%;
+    transition: ease-in-out 2.3s;
+    transform: scaleX(0);
+}
+
+@mixin mobile-only {
+    @media all and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+@mixin mobile-tablette {
+    @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablette)) {
+        @content;
+    }
+}
+@mixin tablette-pc {
+    @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, pc)) {
+        @content;
+    }
+}
+@mixin pc-pc_max {
+    @media screen and (min-width: map-get($breakpoints, pc)) and (max-width: map-get($breakpoints, pc-max)) {
+        @content;
+    }
+}
+@mixin pc_max-only {
+    @media all and (min-width: map-get($breakpoints, pc-max)){
+        @content;
+    }
+}
+@mixin mobile-pc {
+    @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, pc)) {
+        @content;
+    }
+}
+@mixin tablette-pc_max {
+    @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, pc-max)){
+        @content;
+    }
+
+}

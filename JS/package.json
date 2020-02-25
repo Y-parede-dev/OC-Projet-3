@@ -4,7 +4,7 @@
   "description": ">>dans les référentiels vous trouverais mon travail, j'utilise les languages :\r                                                                             - HTML\r                                                                             - CSS\r                                                                             - SCSS\r > si vous êtes intéressée par un projet similaire vous pouvez me contacter à mon adress @mail : parede.yoan.amcs@gmail.com",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ../scss/style.scss:../css/style.css",
+    "sass": "sass --watch ../scss/main.scss:../css/style.css",
     "autoprefix": "postcss ../css/style.css --use autoprefixer -d ../css/prefixed/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

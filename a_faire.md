@@ -1,5 +1,5 @@
 # A faire
 
-> Cree une map pour stocker les couleurs (peut etre 2 une pour les back une pour    les couleurs).
+> Cree une map pour stocker les couleurs (peut etre 2 une pour les back une pour    les couleurs). FAIT
 ;
-> Utiliser des boucle + fonction pour simplifier le code au maximum sur toute les pages (changer le nom des class sur tout le html ) refaire tout les css par la suite
+> Utiliser des boucle + fonction pour simplifier le code au maximum sur toute les pages (changer le nom des class sur tout le html ) refaire tout les css par la suite FAIT 50%

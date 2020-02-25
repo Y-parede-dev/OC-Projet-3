@@ -1,0 +1,29 @@
+$font-size: (xxl: 7em, xl: 6em, l: 5em, lm: 4em, m: 3.5em, ms: 3em, s: 2.5em, xs: 2em, xxs: 1.5em);
+
+$back-colors:(
+    back: $color_back,
+    
+    first: $color_back_first,
+    second: $color_back_second,
+    third: $color_back_third,
+    fourth: $color_back_fourth,
+    
+);
+$txt-colors:(
+    txt:  $color_text,
+    first: $color_text_first_M,
+    second_1: $color_text_second_M--1,
+    second_2: $color_text_second_M--2,
+    second_3: $color_text_second_M--3,
+    third_1: $color_text_third_M--1,
+    third_2: $color_text_third_M--2,
+    third_3: $color_text_third_M--3,
+    fourth_1: $color_text_fourth_M--1,
+    fourth_2: $color_text_third_M--2,
+);
+$breakpoints:(
+mobile: 600px,
+tablette: 768px,
+pc: 992px,
+pc-max: 1200px,
+);
