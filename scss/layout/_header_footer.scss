@@ -45,38 +45,46 @@ footer a {
 }
 
 
-@media all and (min-width: map-get($breakpoints, pc-max )) {
+@media all and (min-width: map-get($breakpoints, pc-max)) {
     header {
-        padding: 1.5% 0 1%;
-        font-size: map-get($font-size , lm);
+        padding: 1.1rem 0;
+    }
+    .logo {
+        width: 20%;
     }
     footer a {
         width: fit-content;
-        font-size: map-get($font-size, m);
-        padding: 1.7% 2.5%;
+        font-size: map-get($font-size, ms);
+        padding: 1.2rem;
     }
     
 }
+@media screen and (min-width: map-get($breakpoints, laytop)) and (max-width: map-get($breakpoints, pc-max)) {
+    .logo {
+        width: 25%;
+    }
+}
 @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, pc-max)) {
     header {
-        padding: 2.1% 0 .5%;
-        font-size: map-get($font-size, m);
+        padding: 2.1rem 0;
     }
+
     footer a {
-        
-        font-size: map-get($font-size, ms);
-        padding: 1% 2%;
+        font-size: map-get($font-size, s);
+        padding: 1rem;
     }
 }
 @media all and (max-width: map-get($breakpoints, mobile)) {
     header {
-        padding: 2.8% 0 .5%;
-        font-size: map-get($font-size, ms);
+        padding: 2.8rem 0;
+    } 
+    .logo {
+        width: 30%;
     }
     footer a {
         
-        font-size: map-get($font-size, s);
-        padding: 1.2% 2%;
+        font-size: map-get($font-size, xs);
+        padding: 1.2rem;
     }
 } 
 

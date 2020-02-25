@@ -1,14 +1,16 @@
 
 html,body {
     width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
 }
 @import "utils/variable";
 @import "utils/maps";
 @import "utils/mixins";
+@import "utils/keyframes";
 @import "utils/animations";
+
+@import "base/typographies";
 
 @import "layout/header_footer";
 @import "layout/all";

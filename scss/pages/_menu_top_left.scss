@@ -11,7 +11,6 @@
     margin: 6% 46.5% 0;
 }
 .title_first_bottom {
-    font-size: map-get($font-size, m);
     margin: 0;
 }
 .container_bottom_first_menu {
@@ -19,8 +18,13 @@
     justify-content: center;
 }
 .img_note_musique_inside_menu_bottom {
-    margin: $margin--img_music;
-    width: $seize--img_music;
-    height: $seize--img_music;
+    margin: 0 .7% 2.5% 0;
+    width: 83%;
+    height: 5%;
 }
 
+.item {
+    &__title {
+        font-size: 1.5rem;
+    }
+}

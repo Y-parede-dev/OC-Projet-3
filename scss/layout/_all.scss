@@ -1,5 +1,5 @@
 main {
-    margin: $margin_menu-XL;
+    margin: 0 8.75% 17%;
     box-shadow: $b-shadow;
     padding: 0 0 10%;
 }
@@ -7,13 +7,12 @@ main {
     @include back-color($back-colors);
 }
 section {
-    margin:1% 10% 7%;
+    margin:0 3.8rem 4rem;
 }
 li {
     list-style-type: none;
 }
-
-.header--top, .header--middle, .header--bottom, .menu_choice {
+.header--top, .header--middle, .header--bottom{
     display: flex;
     justify-content: space-between;
 }
@@ -29,20 +28,23 @@ li {
 .barre {
     width: 36%;
     height: .5%;
-    margin: 0 -8%;
 }
-.menu_choice {
-    margin: 0; 
-    padding: 0; 
+.menu_section {
+    margin: 0;
+    padding: 0;
 }
-.menu_price {
-    font-weight: bold;
+.menu__item {
+    display: grid;
+    grid-template-columns: 12fr 1fr;
+    grid-template-rows: 1fr .5fr;
 }
-.menu_choice_plate, .menu_price {
-    margin: 15px 0;
-}
-.menu_choice_plate,.menu_price{
-    font-size: map-get($font-size, xs);
+.item {
+    &__price {
+        font-weight: bold;
+        text-align: center;
+        align-items: center;
+        margin: 5px 0 0;
+    }
 }
 
 @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, pc-max)) {
