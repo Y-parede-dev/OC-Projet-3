@@ -155,7 +155,6 @@ html, body {
   transform: scaleX(0); }
 
 .title_all {
-  font-size: 3.5rem;
   margin: 0; }
   .title_all:hover + .underline {
     opacity: 1;
@@ -164,6 +163,9 @@ html, body {
 
 html {
   font-size: 100%; }
+
+.title_all {
+  font-size: 3.5rem; }
 
 .container_menu {
   font-size: 3rem; }
@@ -174,15 +176,27 @@ html {
 .title_first_bottom {
   font-size: 3.5rem; }
 
-@media screen and (min-width: 1000px) and (max-width: 1470px) {
+.item__title, .item__price {
+  font-size: 2.5rem; }
+
+@media all and (min-width: 1100px) and (max-width: 1920px) {
+  .item__title, .item__price {
+    font-size: 2rem; } }
+@media all and (min-width: 1100px) and (max-width: 1470px) {
   .container_menu {
     font-size: 2.5rem; } }
-@media screen and (min-width: 899px) and (max-width: 1000px) {
+@media all and (min-width: 899px) and (max-width: 1100px) {
   .container_menu {
     font-size: 2rem; } }
+@media all and (min-width: 600px) and (max-width: 1100px) {
+  .item__title, .item__price {
+    font-size: 1.5rem; } }
 @media all and (max-width: 600px) {
   .container_menu {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+
+  .item__tilte, .item__price {
+    font-size: 1rem; } }
 /*----header-----*/
 header {
   margin: 0;
@@ -231,7 +245,7 @@ footer a {
     width: fit-content;
     font-size: 3rem;
     padding: 1.2rem; } }
-@media screen and (min-width: 1000px) and (max-width: 1920px) {
+@media screen and (min-width: 1100px) and (max-width: 1920px) {
   .logo {
     width: 25%; } }
 @media screen and (min-width: 600px) and (max-width: 1920px) {
@@ -297,7 +311,8 @@ li {
 .menu__item {
   display: grid;
   grid-template-columns: 12fr 1fr;
-  grid-template-rows: 1fr .5fr; }
+  grid-template-rows: 1fr;
+  gap: 1rem; }
 
 .item__price {
   font-weight: bold;
@@ -306,15 +321,9 @@ li {
   margin: 5px 0 0; }
 
 @media screen and (min-width: 899px) and (max-width: 1920px) {
-  .title_all {
-    font-size: 2rem; }
-
   .barre {
     width: 30%; } }
 @media screen and (min-width: 300px) and (max-width: 899px) {
-  .title_all {
-    font-size: 1.5rem; }
-
   .barre {
     width: 25%; } }
 .title_menu {
@@ -468,7 +477,7 @@ li {
 
   .menu {
     padding: 14rem 0 17rem; } }
-@media screen and (min-width: 1000px) and (max-width: 1470px) {
+@media screen and (min-width: 1100px) and (max-width: 1470px) {
   .container_menu {
     gap: 5rem;
     margin: 5rem 9rem; }
@@ -524,12 +533,9 @@ main .title_second--inside {
   justify-content: center; }
 
 .img_note_musique_inside_menu_bottom {
-  margin: 0 .7% 2.5% 0;
-  width: 83%;
-  height: 5%; }
-
-.item__title {
-  font-size: 1.5rem; }
+  margin: .4rem 1rem 0 0;
+  width: 3.5rem;
+  height: 3.5rem; }
 
 .main_bottom-L {
   font-family: 'Dancing Script', sans-serif; }

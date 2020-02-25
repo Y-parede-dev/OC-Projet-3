@@ -43,7 +43,7 @@
 }
 
 .title_all {
-    font-size: map-get($font-size, m);
+    
     margin: 0;
     &:hover + .underline {
         opacity: 1;

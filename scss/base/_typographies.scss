@@ -1,35 +1,69 @@
 html {
     font-size: 100%;
 }
+.title_all {
+    font-size: map-get($font-size, m);
+}
 // home //
+
 .container_menu {
     font-size: map-get($font-size, ms);
 }
 .container {
     font-size: map-get($font-size, s);
 }
+
 // menu top left //
+
 .title_first_bottom {
     font-size: map-get($font-size, m);
 }
-@media screen and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc)) {
+.item {
+    &__title, &__price {
+        font-size: map-get($font-size, s);
+    }
+}
+@media all and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc-max)) {
+    .item {
+        &__title, &__price {
+            font-size: map-get($font-size, xs);
+        }
+    }
+}
+@media all and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc)) {
     // home //
+
     .container_menu {
        font-size: map-get($font-size, s);
     }
 }
+
 // menu top left //
-@media screen and (min-width:map-get($breakpoints, tablette)) and (max-width:map-get($breakpoints, laytop)) {
+@media all and (min-width:map-get($breakpoints, tablette)) and (max-width:map-get($breakpoints, laytop)) {
     // home //
+
     .container_menu {
         font-size: map-get($font-size, xs);
     }
 }
 // menu top left //
-@media all and (max-width:map-get($breakpoints, mobile)) {
+
+@media all and (min-width:map-get($breakpoints, mobile)) and (max-width:map-get($breakpoints, laytop)) {
+    .item {
+        &__title, &__price {
+            font-size: map-get($font-size, xxs);
+        }
+    }
+}
+@media all and (max-width: 600px) {
     // home //
+    
     .container_menu {
         font-size: map-get($font-size, xxs);
     }
+    .item {
+        &__tilte, &__price {
+            font-size: 1rem;
+        }
+    }
 }
-// menu top left //

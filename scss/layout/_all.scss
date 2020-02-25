@@ -36,10 +36,12 @@ li {
 .menu__item {
     display: grid;
     grid-template-columns: 12fr 1fr;
-    grid-template-rows: 1fr .5fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
 }
 .item {
     &__price {
+        
         font-weight: bold;
         text-align: center;
         align-items: center;
@@ -48,18 +50,13 @@ li {
 }
 
 @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, pc-max)) {
-    .title_all {
-        font-size: map-get($font-size, xs);
-    }
+
     .barre {
         width: 30%;
     }
 }
 @media screen and (min-width: map-get($breakpoints, mobile)-300px) and (max-width: map-get($breakpoints, tablette)) {
-    
-    .title_all {
-        font-size: map-get($font-size, xxs);
-    }
+  
     .barre {
         width: 25%;
     }
