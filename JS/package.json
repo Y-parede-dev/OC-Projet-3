@@ -17,8 +17,7 @@
   "browserlist": [
     "defaults",
     "last 4 versions",
-    ">0.5%",
-    ""
+    ">0.5%"
   ],
   "bugs": {
     "url": "https://github.com/Y-parede-dev/OC-Projet-3/issues"

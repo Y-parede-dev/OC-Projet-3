@@ -1,10 +1,20 @@
 html {
     font-size: 100%;
 }
+.main_top-L, .menu--first {
+    font-family: 'Devonshire', cursive;
+}
+.title_first {
+    text-align: center;
+    font-size: map-get($font-size, xl)
+}
 .title_all {
     font-size: map-get($font-size, m);
 }
-// home //
+
+.title_third_M, .title_fourth_M, .second_item__price, .fourth_item__price {
+    font-weight: normal;
+}
 
 .container_menu {
     font-size: map-get($font-size, ms);
@@ -12,9 +22,53 @@ html {
 .container {
     font-size: map-get($font-size, s);
 }
+.title_menu_top_left, .title_menu_bottom_left {
+    font-family: 'Ubuntu', sans-serif;
+}
 
-// menu top left //
+.title_second--inside {
+    font-size: map-get($font-size, s);
+}
+.menu--second, .title_second--inside {
+    font-family: 'Croissant One', cursive;
+}
+.container_underline > .title_second_M {
+    font-size: map-get($font-size, xs);
+}
+.title_menu_top_right {
+    font-family: 'Croissant One', cursive;  
+    color: #C67412;  
+}
+.p_top_right {
+    @include gradient(.25turn, $color_text_second_M--1, $color_text_second_M--2);  
+}
 
+.title_third_inside {
+    font-size: map-get($font-size, l);
+}
+.menu--third {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title_menu_bottom_left, .p_bottom_left {
+    @include gradient(.25turn, $color_text_third_M--1, $color_text_third_M--2 )
+}
+.p_bottom_left {
+    font-family: 'Dancing Script', cursive;
+}
+
+.title_fourth_inside {
+    font-size: map-get($font-size, xl);
+}
+.container_underline > .title_fourth_M {
+    font-size: map-get($font-size, xs);
+}
+.menu--fourth {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title_menu_bottom_right, .p_bottom_right {
+    font-family: 'Kaushan Script', cursive;
+    @include gradient(.25turn, $color_text_fourth_M--1, $color_text_fourth_M--2)
+}
 .title_first_bottom {
     font-size: map-get($font-size, m);
 }
@@ -23,41 +77,53 @@ html {
         font-size: map-get($font-size, s);
     }
 }
-@media all and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc-max)) {
-    .item {
-        &__title, &__price {
-            font-size: map-get($font-size, xs);
-        }
+@media screen and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc-max)) {
+    .title_first {
+        font-size: map-get($font-size, l)
     }
-}
-@media all and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc)) {
-    // home //
-
-    .container_menu {
-       font-size: map-get($font-size, s);
+    .title_all {
+        font-size: map-get($font-size, ms);
     }
-}
-
-// menu top left //
-@media all and (min-width:map-get($breakpoints, tablette)) and (max-width:map-get($breakpoints, laytop)) {
-    // home //
-
-    .container_menu {
-        font-size: map-get($font-size, xs);
-    }
-}
-// menu top left //
-
-@media all and (min-width:map-get($breakpoints, mobile)) and (max-width:map-get($breakpoints, laytop)) {
     .item {
         &__title, &__price {
             font-size: map-get($font-size, xxs);
         }
     }
 }
-@media all and (max-width: 600px) {
+@media screen and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc)) {
     // home //
-    
+    .title_first {
+        font-size: map-get($font-size, lm)
+    }
+    .title_all {
+        font-size: map-get($font-size, s);
+    }
+    .container_menu {
+       font-size: map-get($font-size, s);
+    }
+}
+
+@media screen and (min-width:map-get($breakpoints, mobile)) and (max-width:map-get($breakpoints, laytop)) {
+
+    .title_first {
+        font-size: map-get($font-size, m);
+    }
+    .title_all {
+        font-size: map-get($font-size, s);
+    }
+    .container_menu {
+        font-size: map-get($font-size, xs);
+    }
+    .item {
+        &__title, &__price {
+            font-size: .8rem;
+        }
+    }
+}
+
+
+@media all and (max-width: 600px) {
+
     .container_menu {
         font-size: map-get($font-size, xxs);
     }

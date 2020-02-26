@@ -164,8 +164,18 @@ html, body {
 html {
   font-size: 100%; }
 
+.main_top-L, .menu--first {
+  font-family: 'Devonshire', cursive; }
+
+.title_first {
+  text-align: center;
+  font-size: 6rem; }
+
 .title_all {
   font-size: 3.5rem; }
+
+.title_third_M, .title_fourth_M, .second_item__price, .fourth_item__price {
+  font-weight: normal; }
 
 .container_menu {
   font-size: 3rem; }
@@ -173,24 +183,92 @@ html {
 .container {
   font-size: 2.5rem; }
 
+.title_menu_top_left, .title_menu_bottom_left {
+  font-family: 'Ubuntu', sans-serif; }
+
+.title_second--inside {
+  font-size: 2.5rem; }
+
+.menu--second, .title_second--inside {
+  font-family: 'Croissant One', cursive; }
+
+.container_underline > .title_second_M {
+  font-size: 2rem; }
+
+.title_menu_top_right {
+  font-family: 'Croissant One', cursive;
+  color: #C67412; }
+
+.p_top_right {
+  background: linear-gradient(0.25turn, #C67412, #A56799);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.title_third_inside {
+  font-size: 5rem; }
+
+.menu--third {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.title_menu_bottom_left, .p_bottom_left {
+  background: linear-gradient(0.25turn, #0228DD, #0670F3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.p_bottom_left {
+  font-family: 'Dancing Script', cursive; }
+
+.title_fourth_inside {
+  font-size: 6rem; }
+
+.container_underline > .title_fourth_M {
+  font-size: 2rem; }
+
+.menu--fourth {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.title_menu_bottom_right, .p_bottom_right {
+  font-family: 'Kaushan Script', cursive;
+  background: linear-gradient(0.25turn, #3D923A, #BEFF7F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 .title_first_bottom {
   font-size: 3.5rem; }
 
 .item__title, .item__price {
   font-size: 2.5rem; }
 
-@media all and (min-width: 1100px) and (max-width: 1920px) {
-  .item__title, .item__price {
-    font-size: 2rem; } }
-@media all and (min-width: 1100px) and (max-width: 1470px) {
-  .container_menu {
-    font-size: 2.5rem; } }
-@media all and (min-width: 899px) and (max-width: 1100px) {
-  .container_menu {
-    font-size: 2rem; } }
-@media all and (min-width: 600px) and (max-width: 1100px) {
+@media screen and (min-width: 1100px) and (max-width: 1920px) {
+  .title_first {
+    font-size: 5rem; }
+
+  .title_all {
+    font-size: 3rem; }
+
   .item__title, .item__price {
     font-size: 1.5rem; } }
+@media screen and (min-width: 1100px) and (max-width: 1470px) {
+  .title_first {
+    font-size: 4rem; }
+
+  .title_all {
+    font-size: 2.5rem; }
+
+  .container_menu {
+    font-size: 2.5rem; } }
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+  .title_first {
+    font-size: 3.5rem; }
+
+  .title_all {
+    font-size: 2.5rem; }
+
+  .container_menu {
+    font-size: 2rem; }
+
+  .item__title, .item__price {
+    font-size: .8rem; } }
 @media all and (max-width: 600px) {
   .container_menu {
     font-size: 1.5rem; }
@@ -296,9 +374,7 @@ li {
   margin: 0 0 4%; }
 
 .title_first {
-  margin: 5.35% 0 2.2%;
-  text-align: center;
-  font-size: 6rem; }
+  margin: 5.35% 0 2.2%; }
 
 .barre {
   width: 36%;
@@ -312,7 +388,8 @@ li {
   display: grid;
   grid-template-columns: 12fr 1fr;
   grid-template-rows: 1fr;
-  gap: 1rem; }
+  gap: 1rem;
+  margin: 1rem 4rem; }
 
 .item__price {
   font-weight: bold;
@@ -337,12 +414,11 @@ li {
 .container_menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  gap: 2rem;
   justify-content: space-between;
-  margin: 5rem 7rem; }
+  margin: 4rem 2rem; }
 
 .menu {
-  font-family: 'Devonshire', cursive;
   cursor: pointer;
   display: flex;
   flex-direction: column-reverse;
@@ -387,44 +463,6 @@ li {
 
 .p_menu {
   margin: 24px 0 30px; }
-
-.title_menu_top_left, .title_menu_bottom_left {
-  font-family: 'Ubuntu', sans-serif; }
-
-.menu--first {
-  font-family: 'Devonshire', cursive; }
-
-.menu--second {
-  font-family: 'Croissant One', cursive; }
-
-.title_menu_top_right {
-  font-family: 'Croissant One', cursive;
-  color: #C67412; }
-
-.p_top_right {
-  background: linear-gradient(0.25turn, #C67412, #A56799);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
-
-.menu--third {
-  font-family: Arial, Helvetica, sans-serif; }
-
-.title_menu_bottom_left, .p_bottom_left {
-  background: linear-gradient(0.25turn, #0228DD, #0670F3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
-
-.p_bottom_left {
-  font-family: 'Dancing Script', cursive; }
-
-.menu--fourth {
-  font-family: Arial, Helvetica, sans-serif; }
-
-.title_menu_bottom_right, .p_bottom_right {
-  font-family: 'Kaushan Script', cursive;
-  background: linear-gradient(0.25turn, #3D923A, #BEFF7F);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
 
 .container {
   display: flex;
@@ -491,12 +529,10 @@ li {
 .main_top-R {
   padding: 0 0 10%; }
 
-main .title_second--inside {
-  font-size: 6rem;
+.title_second--inside {
   text-align: center;
   padding: 14% 0 0;
   margin: 0 0 10%;
-  font-family: 'Croissant One', sans-serif;
   background: linear-gradient(0.25turn, #C67412, #A56799);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
@@ -507,15 +543,8 @@ main .title_second--inside {
 .title_second_M--middle, .second_menu-middle {
   color: #A56799; }
 
-.title_second_M--bottom, .c_m_c_second_menu {
+.title_second_M--bottom, .second_menu-bottom {
   color: #6E4CCC; }
-
-.title_second_M {
-  font-size: 2.5rem; }
-
-.main_top-L {
-  box-shadow: 0 2px 8.5px 1px rgba(0, 0, 0, 0.175);
-  font-family: 'Devonshire', cursive; }
 
 .link_first {
   color: #3C1218; }
@@ -537,6 +566,12 @@ main .title_second--inside {
   width: 3.5rem;
   height: 3.5rem; }
 
+.first_M {
+  margin: 0 5.5rem 4rem; }
+
+.first_barre {
+  margin: 0; }
+
 .main_bottom-L {
   font-family: 'Dancing Script', sans-serif; }
 
@@ -545,7 +580,6 @@ main .title_second--inside {
 
 .title_third_inside {
   text-align: center;
-  font-size: 5em;
   padding: 14% 0 5%;
   background: linear-gradient(0.25turn, #0228DD, #88C6F5);
   -webkit-background-clip: text;
@@ -559,7 +593,6 @@ main .title_second--inside {
   color: black; }
 
 .title_fourth_inside {
-  font-size: 6em;
   text-align: center;
   padding: 9% 0 0;
   margin: 0 0 9%;
@@ -568,15 +601,12 @@ main .title_second--inside {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-.title_fourth_M {
-  font-size: 2.5rem; }
-
 .mentions {
   width: 80%;
   margin: 5% 10% 8%;
   font-size: 2rem; }
   .mentions__titles {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-align: center; }
   .mentions__articles {
     display: block;

@@ -22,8 +22,6 @@ li {
 }
 .title_first {
     margin: 5.35% 0 2.2%;
-    text-align: center;
-    font-size: map-get($font-size, xl)
 }
 .barre {
     width: 36%;
@@ -38,6 +36,8 @@ li {
     grid-template-columns: 12fr 1fr;
     grid-template-rows: 1fr;
     gap: 1rem;
+    margin: 1rem 4rem;
+    
 }
 .item {
     &__price {

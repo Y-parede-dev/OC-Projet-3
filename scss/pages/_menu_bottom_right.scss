@@ -6,13 +6,9 @@
     color: black;
 }
 .title_fourth_inside {
-    font-size: 6em;
     text-align: center;
     padding: 9% 0 0;
     margin: 0 0 9%;
     font-style: italic;
     @include gradient(.25turn, $color_text_fourth_M--1, $color_text_fourth_M--2);
-}
-.title_fourth_M {
-    font-size: map-get($font-size, s);
 }

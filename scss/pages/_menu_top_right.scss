@@ -1,12 +1,12 @@
 .main_top-R {
     padding: 0 0 10%;
 }
-main .title_second--inside {
-    font-size: map-get($font-size, xl );
+.title_second--inside {
+    
     text-align: center;
     padding: 14% 0 0;
     margin: 0 0 10%;
-    font-family: 'Croissant One', sans-serif;
+    
     @include gradient(.25turn, $color_text_second_M--1, $color_text_second_M--2); 
 }
 
@@ -17,12 +17,9 @@ main .title_second--inside {
 .title_second_M--middle, .second_menu-middle {
     color: $color_text_second_M--2;
 }
-.title_second_M--bottom, .c_m_c_second_menu {
+.title_second_M--bottom, .second_menu-bottom {
     color: $color_text_second_M--3;
 }
 
-.title_second_M {
-    font-size: map-get($font-size, s);
- 
-}
+
 

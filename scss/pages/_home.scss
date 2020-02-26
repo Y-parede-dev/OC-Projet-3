@@ -9,12 +9,11 @@
 .container_menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
+    gap: 2rem;
     justify-content: space-between;
-    margin: 5rem 7rem;
+    margin: 4rem 2rem;
 } 
 .menu {
-    font-family: 'Devonshire', cursive;
     cursor: pointer;
     display: flex;
     flex-direction: column-reverse;
@@ -33,38 +32,6 @@
 .p_menu {
     margin: 24px 0 30px;
 }
-.title_menu_top_left, .title_menu_bottom_left {
-    font-family: 'Ubuntu', sans-serif;
-}
-.menu--first {
-    font-family: 'Devonshire', cursive;
-}
-.menu--second {
-    font-family: 'Croissant One', cursive;
-}
-.title_menu_top_right {
-    font-family: 'Croissant One', cursive;  
-    color: #C67412;  
-}
-.p_top_right {
-    @include gradient(.25turn, $color_text_second_M--1, $color_text_second_M--2);  
-}
-.menu--third {
-    font-family: Arial, Helvetica, sans-serif;
-}
-.title_menu_bottom_left, .p_bottom_left {
-    @include gradient(.25turn, $color_text_third_M--1, $color_text_third_M--2 )
-}
-.p_bottom_left {
-    font-family: 'Dancing Script', cursive;
-}
-.menu--fourth {
-    font-family: Arial, Helvetica, sans-serif;
-}
-.title_menu_bottom_right, .p_bottom_right {
-    font-family: 'Kaushan Script', cursive;
-    @include gradient(.25turn, $color_text_fourth_M--1, $color_text_fourth_M--2)
-}
 .container {
     display: flex;
     justify-content: center;
@@ -78,7 +45,6 @@
     margin: 0 27% 14rem;
 
 }
-
 .container h3 {
     margin: 3% 2%;
 }
