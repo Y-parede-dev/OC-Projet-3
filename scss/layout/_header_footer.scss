@@ -5,12 +5,12 @@ header {
     margin: $margin_header;
     width: 100%;
     background-color: $color_back;
-    
+    padding: .8rem 0;
     font-weight: bold;
     text-align: center;
 }
 .logo {
-    width: 30%;
+    width: 45%;
     align-items: center;
 }
 .hidden {
@@ -45,46 +45,39 @@ footer a {
 }
 
 
-@media all and (min-width: map-get($breakpoints, pc-max)) {
-    header {
-        padding: 1.1rem 0;
-    }
+@media all and (min-width: map-get($breakpoints, pc-max)+1px) {
+   
     .logo {
-        width: 20%;
+        width: 30%;
     }
     footer a {
         width: fit-content;
-        font-size: map-get($font-size, ms);
+    
         padding: 1.2rem;
     }
     
 }
-@media screen and (min-width: map-get($breakpoints, laytop)) and (max-width: map-get($breakpoints, pc-max)) {
-    .logo {
-        width: 25%;
-    }
-}
-@media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, pc-max)) {
-    header {
-        padding: 2.1rem 0;
-    }
 
+@media screen and (min-width: map-get($breakpoints, mobile)+1px) and (max-width: map-get($breakpoints, pc-max)) {
+  
+    .logo {
+        width: 40%;
+    }
     footer a {
-        font-size: map-get($font-size, s);
+   
         padding: 1rem;
     }
 }
 @media all and (max-width: map-get($breakpoints, mobile)) {
     header {
-        padding: 2.8rem 0;
+        padding: .8rem 0;
     } 
     .logo {
-        width: 30%;
+        width: 76%;
     }
     footer a {
-        
-        font-size: map-get($font-size, xs);
-        padding: 1.2rem;
+  
+        padding: 1.2rem .2rem;
     }
 } 
 

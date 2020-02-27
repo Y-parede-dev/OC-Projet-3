@@ -15,10 +15,10 @@ html {
     font-weight: normal;
 }
 .container_menu {
-    font-size: map-get($font-size, ms);
+    font-size: map-get($font-size, s);
 }
 .container {
-    font-size: map-get($font-size, s);
+    font-size: map-get($font-size, xs);
 }
 .title_menu_top_left, .title_menu_bottom_left {
     font-family: 'Ubuntu', sans-serif;
@@ -38,7 +38,7 @@ html {
     color: #C67412;  
 }
 .p_top_right {
-    @include gradient(90deg, $color_text_second_M--1, $color_text_second_M--2);  
+    @include gradient(90deg, $color_text_second_M--1 20%, $color_text_second_M--2 47%);  
 }
 
 .title_third_inside {
@@ -48,7 +48,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 .title_menu_bottom_left, .p_bottom_left {
-    @include gradient(.25turn, $color_text_third_M--1, $color_text_third_M--2 )
+    @include gradient(90deg, $color_text_third_M--1 10%, $color_text_third_M--2 50%)
 }
 .p_bottom_left {
     font-family: 'Dancing Script', cursive;
@@ -75,6 +75,10 @@ html {
         font-size: map-get($font-size, s);
     }
 }
+
+footer a {
+    font-size: map-get($font-size, xs);
+}
 @media screen and (min-width:map-get($breakpoints, pc)) and (max-width:map-get($breakpoints, pc-max)) {
     .title_first {
         font-size: map-get($font-size, l)
@@ -88,43 +92,46 @@ html {
         }
     }
 }
-@media screen and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc)) {
-    // home //
+@media screen and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc)-1px) {
+    
     .title_first {
         font-size: map-get($font-size, lm)
     }
     .title_all {
         font-size: map-get($font-size, s);
     }
-    .container_menu {
-       font-size: map-get($font-size, s);
-    }
+   
 }
 
-@media screen and (min-width:map-get($breakpoints, mobile)) and (max-width:map-get($breakpoints, laytop)) {
-
+@media screen and (min-width:map-get($breakpoints, tablette)) and (max-width:map-get($breakpoints, laytop)-1px) {
+    html {
+        font-size: 67.5%;
+    }
     .title_first {
         font-size: map-get($font-size, m);
     }
     .title_all {
         font-size: map-get($font-size, s);
     }
-    .container_menu {
-        font-size: map-get($font-size, xs);
-    }
+    
     .item {
         &__title, &__price {
             font-size: .8rem;
         }
     }
 }
-
-
-@media all and (max-width: 600px) {
-
-    .container_menu {
-        font-size: map-get($font-size, xxs);
+@media screen and (min-width:map-get($breakpoints, mobile)) and (max-width:map-get($breakpoints, tablette)-1px){
+    html {
+        font-size: 62.5%;
     }
+   
+}
+
+@media all and (max-width: 599px) {
+    html {
+        font-size: 62%;
+    }
+    
     .item {
         &__tilte, &__price {
             font-size: 1rem;

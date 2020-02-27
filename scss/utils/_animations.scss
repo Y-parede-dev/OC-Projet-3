@@ -12,9 +12,11 @@
 }
 .effect_wiggle {
     transform-origin: center;
-    animation-name: wiggle;
-    animation-duration: 400ms;
-    animation-iteration-count: infinite;
+    &:hover {
+        animation-name: wiggle;
+        animation-duration: 400ms;
+        animation-iteration-count: infinite;
+    }
 }
 .underline--1 {
     @include underline($color_text_first_M )

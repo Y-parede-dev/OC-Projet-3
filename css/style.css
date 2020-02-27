@@ -53,10 +53,11 @@ html, body {
     opacity: 0.6; }
 
 .effect_wiggle {
-  transform-origin: center;
-  animation-name: wiggle;
-  animation-duration: 400ms;
-  animation-iteration-count: infinite; }
+  transform-origin: center; }
+  .effect_wiggle:hover {
+    animation-name: wiggle;
+    animation-duration: 400ms;
+    animation-iteration-count: infinite; }
 
 .underline--1 {
   opacity: 0;
@@ -178,10 +179,10 @@ html {
   font-weight: normal; }
 
 .container_menu {
-  font-size: 3rem; }
+  font-size: 2.5rem; }
 
 .container {
-  font-size: 2.5rem; }
+  font-size: 2rem; }
 
 .title_menu_top_left, .title_menu_bottom_left {
   font-family: 'Ubuntu', sans-serif; }
@@ -200,7 +201,7 @@ html {
   color: #C67412; }
 
 .p_top_right {
-  background: linear-gradient(90deg, #C67412, #A56799);
+  background: linear-gradient(90deg, #C67412 20%, #A56799 47%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
@@ -211,7 +212,7 @@ html {
   font-family: Arial, Helvetica, sans-serif; }
 
 .title_menu_bottom_left, .p_bottom_left {
-  background: linear-gradient(0.25turn, #0228DD, #0670F3);
+  background: linear-gradient(90deg, #0228DD 10%, #0670F3 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
@@ -239,7 +240,10 @@ html {
 .item__title, .item__price {
   font-size: 2.5rem; }
 
-@media screen and (min-width: 1470px) and (max-width: 1920px) {
+footer a {
+  font-size: 2rem; }
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
   .title_first {
     font-size: 5rem; }
 
@@ -248,30 +252,30 @@ html {
 
   .item__title, .item__price {
     font-size: 1.5rem; } }
-@media screen and (min-width: 1100px) and (max-width: 1470px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .title_first {
     font-size: 4rem; }
 
   .title_all {
-    font-size: 2.5rem; }
-
-  .container_menu {
     font-size: 2.5rem; } }
-@media screen and (min-width: 600px) and (max-width: 1100px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 67.5%; }
+
   .title_first {
     font-size: 3.5rem; }
 
   .title_all {
     font-size: 2.5rem; }
 
-  .container_menu {
-    font-size: 2rem; }
-
   .item__title, .item__price {
     font-size: .8rem; } }
-@media all and (max-width: 600px) {
-  .container_menu {
-    font-size: 1.5rem; }
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  html {
+    font-size: 62.5%; } }
+@media all and (max-width: 599px) {
+  html {
+    font-size: 62%; }
 
   .item__tilte, .item__price {
     font-size: 1rem; } }
@@ -280,11 +284,12 @@ header {
   margin: 0;
   width: 100%;
   background-color: #579C87;
+  padding: .8rem 0;
   font-weight: bold;
   text-align: center; }
 
 .logo {
-  width: 30%;
+  width: 45%;
   align-items: center; }
 
 .hidden {
@@ -312,37 +317,28 @@ footer a {
   display: flex;
   justify-content: flex-end; }
 
-@media all and (min-width: 1920px) {
-  header {
-    padding: 1.1rem 0; }
-
-  .logo {
-    width: 20%; }
-
-  footer a {
-    width: fit-content;
-    font-size: 3rem;
-    padding: 1.2rem; } }
-@media screen and (min-width: 1100px) and (max-width: 1920px) {
-  .logo {
-    width: 25%; } }
-@media screen and (min-width: 600px) and (max-width: 1920px) {
-  header {
-    padding: 2.1rem 0; }
-
-  footer a {
-    font-size: 2.5rem;
-    padding: 1rem; } }
-@media all and (max-width: 600px) {
-  header {
-    padding: 2.8rem 0; }
-
+@media all and (min-width: 1921px) {
   .logo {
     width: 30%; }
 
   footer a {
-    font-size: 2rem;
+    width: fit-content;
     padding: 1.2rem; } }
+@media screen and (min-width: 601px) and (max-width: 1920px) {
+  .logo {
+    width: 40%; }
+
+  footer a {
+    padding: 1rem; } }
+@media all and (max-width: 600px) {
+  header {
+    padding: .8rem 0; }
+
+  .logo {
+    width: 76%; }
+
+  footer a {
+    padding: 1.2rem .2rem; } }
 main {
   margin: 0 8.75% 17%;
   box-shadow: 0 2px 8.5px 1px rgba(0, 0, 0, 0.175);
@@ -397,10 +393,10 @@ li {
   align-items: center;
   margin: 5px 0 0; }
 
-@media screen and (min-width: 899px) and (max-width: 1920px) {
+@media screen and (min-width: 768px) and (max-width: 1920px) {
   .barre {
     width: 30%; } }
-@media screen and (min-width: 300px) and (max-width: 899px) {
+@media screen and (min-width: 300px) and (max-width: 768px) {
   .barre {
     width: 25%; } }
 .title_menu {
@@ -414,9 +410,10 @@ li {
 .container_menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  grid-template-rows: 1fr 1fr;
+  gap: 2.5rem;
   justify-content: space-between;
-  margin: 4rem 2rem; }
+  margin: 10% 13%; }
 
 .menu {
   cursor: pointer;
@@ -425,7 +422,7 @@ li {
   box-shadow: 0 2px 8.5px 1px rgba(0, 0, 0, 0.175);
   text-decoration: none;
   text-align: center;
-  padding: 13rem 0; }
+  padding: 32% 0; }
   .menu--back {
     background: #579C87; }
   .menu--first {
@@ -471,21 +468,22 @@ li {
   background-color: #579C87;
   color: #FCCA46;
   transform-origin: top;
-  border-radius: 15px;
+  border-radius: 7px;
   text-align: center;
-  width: auto;
-  margin: 0 27% 14rem; }
+  width: max-content;
+  margin: 10% auto 15rem;
+  padding: 0 1.2rem; }
 
 .container h3 {
   margin: 3% 2%; }
 
 .one, .two, .three {
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 5px;
   border: #FCCA46 1px solid;
-  border-radius: 50%;
+  border-radius: 100%;
   background-color: #FCCA46;
-  margin: 1.5rem .8rem;
+  margin: 2.5% .2rem;
   opacity: 0;
   animation: dot 1.5s infinite; }
 
@@ -499,33 +497,29 @@ li {
   animation-delay: 0.3s; }
 
 @media all and (min-width: 1920px) {
-  .container_menu {
-    gap: 9rem;
-    margin: 9rem 21rem; }
-
-  .menu {
-    padding: 21rem 0 24rem; }
-
   .container {
     margin: 0 35% 10rem; } }
-@media screen and (min-width: 1470px) and (max-width: 1920px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
   .container_menu {
-    gap: 6rem;
-    margin: 6rem 16rem; }
+    gap: 4.5rem;
+    margin: 7% 10% 6%; }
 
-  .menu {
-    padding: 14rem 0 17rem; } }
-@media screen and (min-width: 1100px) and (max-width: 1470px) {
-  .container_menu {
-    gap: 5rem;
-    margin: 5rem 9rem; }
+  .container {
+    margin: 0 auto 7rem; }
 
-  .menu {
-    padding: 14rem 0 18rem; } }
-@media all and (max-width: 600px) {
+  .one, .two, .three {
+    width: 6px;
+    height: 4px;
+    margin: .1rem .4rem; } }
+@media screen and (max-width: 599px) {
   .container_menu {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 2.5rem;
-    margin: 5rem 8rem; } }
+    margin: 10% 13%; }
+
+  .menu {
+    padding: 32% 0; } }
 .main_top-R {
   padding: 0 0 10%; }
 

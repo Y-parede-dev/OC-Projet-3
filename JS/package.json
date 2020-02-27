@@ -15,9 +15,7 @@
   "author": "",
   "license": "ISC",
   "browserlist": [
-    "defaults",
-    "last 4 versions",
-    ">0.5%"
+    "defaults"
   ],
   "bugs": {
     "url": "https://github.com/Y-parede-dev/OC-Projet-3/issues"

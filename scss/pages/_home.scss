@@ -1,3 +1,4 @@
+
 .title_menu {
     text-transform: capitalize;
     margin: 0;
@@ -9,9 +10,10 @@
 .container_menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-rows: 1fr 1fr;
+    gap: 2.5rem;
     justify-content: space-between;
-    margin: 4rem 2rem;
+    margin: 10% 13%;
 } 
 .menu {
     cursor: pointer;
@@ -20,7 +22,7 @@
     box-shadow: $b-shadow;
     text-decoration: none;
     text-align: center;
-    padding: 13rem 0;
+    padding: 32% 0;
 
     @include back_color($back_colors);
     @include txt_color($txt_colors);
@@ -39,25 +41,25 @@
     background-color: $color_back;
     color: $color_text;
     transform-origin: top;
-    border-radius: 15px;
+    border-radius: 7px;
     text-align: center;
-    width: auto;
-    margin: 0 27% 14rem;
+    width: max-content;
+    margin: 10% auto 15rem;
+    padding: 0 1.2rem;
 
 }
 .container h3 {
     margin: 3% 2%;
 }
 .one, .two, .three {
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 5px;
     border: $color_text 1px solid;
-    border-radius: 50%;
+    border-radius: 100%;
     background-color: $color_text;
-    margin: 1.5rem .8rem;
+    margin: 2.5% .2rem;
     opacity: 0;
     animation: dot 1.5s infinite;
-
 }
 .one {
     animation-delay: 0.0s;
@@ -70,40 +72,35 @@
 }
 @media all and (min-width:map-get($breakpoints, pc-max)) {
 
-    .container_menu {
-        gap: 9rem;
-        margin: 9rem 21rem;
-    }
-    .menu {
-        padding: 21rem 0 24rem;
-    }
+  
+  
     .container {
         margin: 0 35% 10rem;
     }
 }
-
-@media screen and (min-width:map-get($breakpoints, pc)) and (max-width:map-get($breakpoints, pc-max)) {
+@media screen and (min-width:map-get($breakpoints,mobile)) and (max-width:map-get($breakpoints, tablette)){
+   
     .container_menu {
-        gap: 6rem;
-        margin: 6rem 16rem;
+        gap: 4.5rem;
+        margin: 7% 10% 6%;
     }
-    .menu {
-        padding: 14rem 0 17rem;
+    .container {
+        margin: 0 auto 7rem;
+    }
+    .one, .two, .three {
+        width: 6px;
+        height: 4px;
+        margin: .1rem .4rem;
     }
 }
-@media screen and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc)) {
-
+@media screen and (max-width:map-get($breakpoints, mobile)-1px) {
     .container_menu {
-        gap: 5rem;
-        margin: 5rem 9rem;
-    }
-    .menu {
-        padding: 14rem 0 18rem;
-    }
-}
-@media all and (max-width:map-get($breakpoints, mobile)) {
-    .container_menu {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         gap: 2.5rem;
-        margin: 5rem 8rem;
+        margin: 10% 13%;
+    }
+    .menu {
+        padding: 32% 0;
     }
 }
