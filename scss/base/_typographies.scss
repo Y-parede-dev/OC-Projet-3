@@ -11,11 +11,9 @@ html {
 .title_all {
     font-size: map-get($font-size, m);
 }
-
 .title_third_M, .title_fourth_M, .second_item__price, .fourth_item__price {
     font-weight: normal;
 }
-
 .container_menu {
     font-size: map-get($font-size, ms);
 }
@@ -40,7 +38,7 @@ html {
     color: #C67412;  
 }
 .p_top_right {
-    @include gradient(.25turn, $color_text_second_M--1, $color_text_second_M--2);  
+    @include gradient(90deg, $color_text_second_M--1, $color_text_second_M--2);  
 }
 
 .title_third_inside {
@@ -77,7 +75,7 @@ html {
         font-size: map-get($font-size, s);
     }
 }
-@media screen and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc-max)) {
+@media screen and (min-width:map-get($breakpoints, pc)) and (max-width:map-get($breakpoints, pc-max)) {
     .title_first {
         font-size: map-get($font-size, l)
     }
