@@ -7,7 +7,7 @@
     padding: 14% 0 0;
     margin: 0 0 10%;
     
-    @include gradient(.25turn, $color_text_second_M--1 0%, $color_text_second_M--2 35%); 
+    @include gradient(90deg, $color_text_second_M--1 35%, $color_text_second_M--2 60%); 
 }
 
 .title_second_M--top, .second_menu-top {

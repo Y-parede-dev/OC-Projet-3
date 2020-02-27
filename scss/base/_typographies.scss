@@ -9,7 +9,7 @@ html {
     font-size: map-get($font-size, xl)
 }
 .title_all {
-    font-size: map-get($font-size, m);
+    font-size: map-get($font-size, s);
 }
 .title_third_M, .title_fourth_M, .second_item__price, .fourth_item__price {
     font-weight: normal;
@@ -72,53 +72,24 @@ html {
 }
 .item {
     &__title, &__price {
-        font-size: map-get($font-size, s);
+        font-size: 1.3rem;
     }
 }
-
+.first {
+    &__item_title, &__item_proce {
+        font-size: map-get($font-size, xxs);
+    }
+}
 footer a {
     font-size: map-get($font-size, xs);
 }
-@media screen and (min-width:map-get($breakpoints, pc)) and (max-width:map-get($breakpoints, pc-max)) {
-    .title_first {
-        font-size: map-get($font-size, l)
-    }
-    .title_all {
-        font-size: map-get($font-size, ms);
-    }
-    .item {
-        &__title, &__price {
-            font-size: map-get($font-size, xxs);
-        }
-    }
-}
-@media screen and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc)-1px) {
-    
-    .title_first {
-        font-size: map-get($font-size, lm)
-    }
-    .title_all {
-        font-size: map-get($font-size, s);
-    }
-   
-}
+
 
 @media screen and (min-width:map-get($breakpoints, tablette)) and (max-width:map-get($breakpoints, laytop)-1px) {
     html {
         font-size: 67.5%;
     }
-    .title_first {
-        font-size: map-get($font-size, m);
-    }
-    .title_all {
-        font-size: map-get($font-size, s);
-    }
-    
-    .item {
-        &__title, &__price {
-            font-size: .8rem;
-        }
-    }
+  
 }
 @media screen and (min-width:map-get($breakpoints, mobile)) and (max-width:map-get($breakpoints, tablette)-1px){
     html {
@@ -131,10 +102,5 @@ footer a {
     html {
         font-size: 62%;
     }
-    
-    .item {
-        &__tilte, &__price {
-            font-size: 1rem;
-        }
-    }
+  
 }

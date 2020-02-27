@@ -173,7 +173,7 @@ html {
   font-size: 6rem; }
 
 .title_all {
-  font-size: 3.5rem; }
+  font-size: 2.5rem; }
 
 .title_third_M, .title_fourth_M, .second_item__price, .fourth_item__price {
   font-weight: normal; }
@@ -238,47 +238,23 @@ html {
   font-size: 3.5rem; }
 
 .item__title, .item__price {
-  font-size: 2.5rem; }
+  font-size: 1.3rem; }
+
+.first__item_title, .first__item_proce {
+  font-size: 1.5rem; }
 
 footer a {
   font-size: 2rem; }
 
-@media screen and (min-width: 1440px) and (max-width: 1920px) {
-  .title_first {
-    font-size: 5rem; }
-
-  .title_all {
-    font-size: 3rem; }
-
-  .item__title, .item__price {
-    font-size: 1.5rem; } }
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .title_first {
-    font-size: 4rem; }
-
-  .title_all {
-    font-size: 2.5rem; } }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   html {
-    font-size: 67.5%; }
-
-  .title_first {
-    font-size: 3.5rem; }
-
-  .title_all {
-    font-size: 2.5rem; }
-
-  .item__title, .item__price {
-    font-size: .8rem; } }
+    font-size: 67.5%; } }
 @media screen and (min-width: 600px) and (max-width: 767px) {
   html {
     font-size: 62.5%; } }
 @media all and (max-width: 599px) {
   html {
-    font-size: 62%; }
-
-  .item__tilte, .item__price {
-    font-size: 1rem; } }
+    font-size: 62%; } }
 /*----header-----*/
 header {
   margin: 0;
@@ -386,6 +362,9 @@ li {
   grid-template-rows: 1fr;
   gap: 1rem;
   margin: 1rem 4rem; }
+
+.first__item_menu {
+  margin: 1rem 0; }
 
 .item__price {
   font-weight: bold;
@@ -575,7 +554,7 @@ li {
   text-align: center;
   padding: 14% 0 0;
   margin: 0 0 10%;
-  background: linear-gradient(0.25turn, #C67412 0%, #A56799 35%);
+  background: linear-gradient(90deg, #C67412 35%, #A56799 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
