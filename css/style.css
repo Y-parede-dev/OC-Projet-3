@@ -170,7 +170,7 @@ html {
 
 .title_first {
   text-align: center;
-  font-size: 6rem; }
+  font-size: 4rem; }
 
 .title_all {
   font-size: 2.5rem; }
@@ -246,6 +246,12 @@ html {
 footer a {
   font-size: 2rem; }
 
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 220%; } }
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  html {
+    font-size: 150%; } }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   html {
     font-size: 67.5%; } }
@@ -254,7 +260,7 @@ footer a {
     font-size: 62.5%; } }
 @media all and (max-width: 599px) {
   html {
-    font-size: 62%; } }
+    font-size: 49%; } }
 /*----header-----*/
 header {
   margin: 0;
@@ -476,9 +482,6 @@ li {
   animation-delay: 0.3s; }
 
 @media all and (min-width: 1920px) {
-  html {
-    font-size: 150%; }
-
   .container_menu {
     gap: 3rem;
     margin: 4% 21% 3%; }
@@ -593,6 +596,9 @@ li {
 .first_barre {
   margin: 0; }
 
+@media screen and (max-width: 599px) {
+  .first_M {
+    margin: 0 1.5rem 4rem; } }
 .main_bottom-L {
   font-family: 'Dancing Script', sans-serif; }
 

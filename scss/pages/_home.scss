@@ -71,9 +71,7 @@
     animation-delay: 0.3s;
 }
 @media all and (min-width:map-get($breakpoints, pc-max)) {
-    html {
-        font-size: 150%;
-    }
+    
 
     .container_menu {
         gap: 3rem;

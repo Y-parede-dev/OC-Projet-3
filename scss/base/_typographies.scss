@@ -6,7 +6,7 @@ html {
 }
 .title_first {
     text-align: center;
-    font-size: map-get($font-size, xl)
+    font-size: map-get($font-size, lm)
 }
 .title_all {
     font-size: map-get($font-size, s);
@@ -84,7 +84,16 @@ footer a {
     font-size: map-get($font-size, xs);
 }
 
-
+@media screen and (min-width:map-get($breakpoints, pc-max)){
+    html {
+        font-size: 220%;
+    }
+}
+@media screen and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc-max)-1px){
+    html {
+        font-size: 150%;
+    }
+}
 @media screen and (min-width:map-get($breakpoints, tablette)) and (max-width:map-get($breakpoints, laytop)-1px) {
     html {
         font-size: 67.5%;
@@ -100,7 +109,7 @@ footer a {
 
 @media all and (max-width: 599px) {
     html {
-        font-size: 62%;
+        font-size: 49%;
     }
   
 }

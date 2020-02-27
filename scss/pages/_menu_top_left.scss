@@ -26,3 +26,8 @@
 .first_barre {
     margin: 0;
 }
+@media screen and (max-width:map-get($breakpoints, mobile)-1px) {
+    .first_M {
+        margin: 0 1.5rem 4rem;
+    }
+}
