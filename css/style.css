@@ -474,8 +474,8 @@ li {
 
 @media all and (min-width: 1921px) {
   .container_menu {
-    gap: 3rem;
-    margin: 4% 21% 3%; }
+    gap: 2.5rem;
+    margin: 3% 21% 2%; }
 
   .menu {
     padding: 43% 0; }
