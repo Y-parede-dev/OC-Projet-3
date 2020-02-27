@@ -24,8 +24,9 @@ li {
     margin: 5.35% 0 2.2%;
 }
 .barre {
-    width: 36%;
+    width: 34%;
     height: .5%;
+    margin: -3%;
 }
 .menu_section {
     margin: 0;
@@ -36,7 +37,7 @@ li {
     grid-template-columns: 12fr 1fr;
     grid-template-rows: 1fr;
     gap: 1rem;
-    margin: 1rem 4rem;
+    margin: 1rem;
     
 }
 .first__item_menu {

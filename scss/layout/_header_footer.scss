@@ -37,6 +37,9 @@ footer a {
     color: $color_text;
     text-decoration: none;
     font-weight: bold;
+    width: fit-content;
+    
+    padding: 1.2rem;
 }
 
 .contactez-nous {
@@ -50,22 +53,12 @@ footer a {
     .logo {
         width: 30%;
     }
-    footer a {
-        width: fit-content;
-    
-        padding: 1.2rem;
-    }
-    
 }
 
 @media screen and (min-width: map-get($breakpoints, mobile)+1px) and (max-width: map-get($breakpoints, pc-max)) {
   
     .logo {
         width: 40%;
-    }
-    footer a {
-   
-        padding: 1rem;
     }
 }
 @media all and (max-width: map-get($breakpoints, mobile)) {
@@ -74,10 +67,6 @@ footer a {
     } 
     .logo {
         width: 76%;
-    }
-    footer a {
-  
-        padding: 1.2rem .2rem;
     }
 } 
 

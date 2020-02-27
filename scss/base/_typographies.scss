@@ -10,8 +10,6 @@ html {
 }
 .title_all {
     font-size: map-get($font-size, s);
-}
-.title_third_M, .title_fourth_M, .second_item__price, .fourth_item__price {
     font-weight: normal;
 }
 .container_menu {
@@ -91,7 +89,7 @@ footer a {
 }
 @media screen and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc-max)-1px){
     html {
-        font-size: 150%;
+        font-size: 105%;
     }
 }
 @media screen and (min-width:map-get($breakpoints, tablette)) and (max-width:map-get($breakpoints, laytop)-1px) {
@@ -109,7 +107,7 @@ footer a {
 
 @media all and (max-width: 599px) {
     html {
-        font-size: 49%;
+        font-size: 33%;
     }
   
 }
