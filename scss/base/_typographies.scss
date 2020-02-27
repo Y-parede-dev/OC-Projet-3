@@ -82,12 +82,12 @@ footer a {
     font-size: map-get($font-size, xs);
 }
 
-@media screen and (min-width:map-get($breakpoints, pc-max)){
+@media screen and (min-width:map-get($breakpoints, pc-max)+1px){
     html {
         font-size: 220%;
     }
 }
-@media screen and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc-max)-1px){
+@media screen and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc-max)){
     html {
         font-size: 105%;
     }

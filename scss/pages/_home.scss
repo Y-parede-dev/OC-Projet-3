@@ -70,7 +70,7 @@
 .three {
     animation-delay: 0.3s;
 }
-@media all and (min-width:map-get($breakpoints, pc-max)) {
+@media all and (min-width:map-get($breakpoints, pc-max)+1px) {
     
 
     .container_menu {
@@ -78,7 +78,7 @@
         margin: 4% 21% 3%;
     }
     .menu {
-        padding: 38% 0;
+        padding: 43% 0;
     }
     .one, .two, .three {
         width: 20px;
@@ -86,13 +86,13 @@
         margin: 1rem .4rem;
     }
 }
-@media screen and (min-width:map-get($breakpoints, pc)) and (max-width:map-get($breakpoints, pc-max)-1px) {
+@media screen and (min-width:map-get($breakpoints, pc)) and (max-width:map-get($breakpoints, pc-max)) {
     .container_menu {
         gap: 3rem;
         margin: 4% 21% 3%;
     }
     .menu {
-        padding: 38% 0;
+        padding: 43% 0;
     }
     .one, .two, .three {
         width: 10px;
@@ -103,10 +103,10 @@
 @media screen and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc)-1px) {
     .container_menu {
         gap: 3.5rem;
-        margin: 6% 9% 5%;
+        margin: 6% 15% 5%;
     }
     .menu {
-        padding: 35% 0;
+        padding: 38% 0;
     }
     .one, .two, .three {
         width: 10px;
@@ -117,10 +117,10 @@
 @media screen and (min-width:map-get($breakpoints, tablette)) and (max-width:map-get($breakpoints, laytop)-1px) {
     .container_menu {
         gap: 4rem;
-        margin: 7% 10% 6%;
+        margin: 7% 12% 6%;
     }
     .menu {
-        padding: 35% 0;
+        padding: 37% 0;
     }
     .one, .two, .three {
         width: 7px;
@@ -145,13 +145,18 @@
     .container_menu {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 2.5rem;
-        margin: 10% 13%;
+        gap: 10rem;
+        margin: 10% 30%;
     }
     .container {
         margin: 10% auto 15rem;
     }
     .menu {
         padding: 32% 0;
+    }
+    .one, .two, .three {
+        width: 4px;
+        height: 2px;
+        margin: -1.5rem .4rem;
     }
 }

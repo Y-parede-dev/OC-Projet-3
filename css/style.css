@@ -244,10 +244,10 @@ html {
 footer a {
   font-size: 2rem; }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1921px) {
   html {
     font-size: 220%; } }
-@media screen and (min-width: 1024px) and (max-width: 1919px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   html {
     font-size: 105%; } }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -472,25 +472,25 @@ li {
 .three {
   animation-delay: 0.3s; }
 
-@media all and (min-width: 1920px) {
+@media all and (min-width: 1921px) {
   .container_menu {
     gap: 3rem;
     margin: 4% 21% 3%; }
 
   .menu {
-    padding: 38% 0; }
+    padding: 43% 0; }
 
   .one, .two, .three {
     width: 20px;
     height: 17px;
     margin: 1rem .4rem; } }
-@media screen and (min-width: 1440px) and (max-width: 1919px) {
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
   .container_menu {
     gap: 3rem;
     margin: 4% 21% 3%; }
 
   .menu {
-    padding: 38% 0; }
+    padding: 43% 0; }
 
   .one, .two, .three {
     width: 10px;
@@ -499,10 +499,10 @@ li {
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .container_menu {
     gap: 3.5rem;
-    margin: 6% 9% 5%; }
+    margin: 6% 15% 5%; }
 
   .menu {
-    padding: 35% 0; }
+    padding: 38% 0; }
 
   .one, .two, .three {
     width: 10px;
@@ -511,10 +511,10 @@ li {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .container_menu {
     gap: 4rem;
-    margin: 7% 10% 6%; }
+    margin: 7% 12% 6%; }
 
   .menu {
-    padding: 35% 0; }
+    padding: 37% 0; }
 
   .one, .two, .three {
     width: 7px;
@@ -533,14 +533,19 @@ li {
   .container_menu {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 2.5rem;
-    margin: 10% 13%; }
+    gap: 10rem;
+    margin: 10% 30%; }
 
   .container {
     margin: 10% auto 15rem; }
 
   .menu {
-    padding: 32% 0; } }
+    padding: 32% 0; }
+
+  .one, .two, .three {
+    width: 4px;
+    height: 2px;
+    margin: -1.5rem .4rem; } }
 .main_top-R {
   padding: 0 0 10%; }
 
