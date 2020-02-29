@@ -2,7 +2,6 @@
 .title_menu {
     text-transform: capitalize;
     margin: 0;
-    font-family: sans-serif;
 }
 .title_menu_all_capitalize {
     text-transform: uppercase;
@@ -155,7 +154,7 @@
         padding: 32% 0;
     }
     .one, .two, .three {
-        width: 4px;
+        width:4px;
         height: 2px;
         margin: -1.5rem .4rem;
     }

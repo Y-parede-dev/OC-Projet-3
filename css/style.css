@@ -377,8 +377,7 @@ li {
     width: 25%; } }
 .title_menu {
   text-transform: capitalize;
-  margin: 0;
-  font-family: sans-serif; }
+  margin: 0; }
 
 .title_menu_all_capitalize {
   text-transform: uppercase; }
