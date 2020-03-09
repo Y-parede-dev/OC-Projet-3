@@ -44,7 +44,9 @@ html, body {
     opacity: 1; } }
 .anim_menu_zoom {
   display: flex;
-  flex-direction: column-reverse; }
+  flex-direction: column-reverse;
+  justify-content: center;
+  height: 30rem; }
   .anim_menu_zoom:hover {
     filter: blur(4px);
     animation-name: zoom_opacity;
@@ -176,10 +178,7 @@ html {
   font-size: 2.5rem;
   font-weight: normal; }
 
-.container_menu {
-  font-size: 2.5rem; }
-
-.container {
+.container_menu, .container {
   font-size: 2rem; }
 
 .title_menu_top_left, .title_menu_bottom_left {
@@ -392,12 +391,9 @@ li {
 
 .menu {
   cursor: pointer;
-  display: flex;
-  flex-direction: column-reverse;
   box-shadow: 0 2px 8.5px 1px rgba(0, 0, 0, 0.175);
   text-decoration: none;
-  text-align: center;
-  padding: 32% 0; }
+  text-align: center; }
   .menu--back {
     background: #579C87; }
   .menu--first {
@@ -476,9 +472,6 @@ li {
     gap: 2.5rem;
     margin: 3% 21% 2%; }
 
-  .menu {
-    padding: 43% 0; }
-
   .one, .two, .three {
     width: 20px;
     height: 17px;
@@ -488,8 +481,8 @@ li {
     gap: 3rem;
     margin: 4% 21% 3%; }
 
-  .menu {
-    padding: 43% 0; }
+  .anim_menu_zoom {
+    height: 35rem; }
 
   .one, .two, .three {
     width: 10px;
@@ -500,8 +493,8 @@ li {
     gap: 3.5rem;
     margin: 6% 15% 5%; }
 
-  .menu {
-    padding: 38% 0; }
+  .anim_menu_zoom {
+    height: 29rem; }
 
   .one, .two, .three {
     width: 10px;
@@ -512,8 +505,8 @@ li {
     gap: 4rem;
     margin: 7% 12% 6%; }
 
-  .menu {
-    padding: 37% 0; }
+  .anim_menu_zoom {
+    height: 35rem; }
 
   .one, .two, .three {
     width: 7px;
@@ -538,8 +531,8 @@ li {
   .container {
     margin: 10% auto 15rem; }
 
-  .menu {
-    padding: 32% 0; }
+  .anim_menu_zoom {
+    height: 40rem; }
 
   .one, .two, .three {
     width: 4px;

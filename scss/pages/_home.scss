@@ -16,13 +16,11 @@
 } 
 .menu {
     cursor: pointer;
-    display: flex;
-    flex-direction: column-reverse;
+    
     box-shadow: $b-shadow;
     text-decoration: none;
     text-align: center;
-    padding: 32% 0;
-
+   
     @include back_color($back_colors);
     @include txt_color($txt_colors);
 }
@@ -76,9 +74,7 @@
         gap: 2.5rem;
         margin: 3% 21% 2%;
     }
-    .menu {
-        padding: 43% 0;
-    }
+ 
     .one, .two, .three {
         width: 20px;
         height: 17px;
@@ -90,9 +86,9 @@
         gap: 3rem;
         margin: 4% 21% 3%;
     }
-    .menu {
-        padding: 43% 0;
-    }
+   .anim_menu_zoom {
+       height: 35rem;
+   }
     .one, .two, .three {
         width: 10px;
         height: 7px;
@@ -104,8 +100,8 @@
         gap: 3.5rem;
         margin: 6% 15% 5%;
     }
-    .menu {
-        padding: 38% 0;
+    .anim_menu_zoom {
+        height: 29rem;
     }
     .one, .two, .three {
         width: 10px;
@@ -118,8 +114,8 @@
         gap: 4rem;
         margin: 7% 12% 6%;
     }
-    .menu {
-        padding: 37% 0;
+    .anim_menu_zoom {
+        height: 35rem;
     }
     .one, .two, .three {
         width: 7px;
@@ -150,8 +146,8 @@
     .container {
         margin: 10% auto 15rem;
     }
-    .menu {
-        padding: 32% 0;
+    .anim_menu_zoom {
+        height: 40rem;
     }
     .one, .two, .three {
         width:4px;

@@ -1,6 +1,8 @@
 .anim_menu_zoom {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: center;
+    height: 30rem;
     &:hover {
         filter: blur(4px);
         animation-name: zoom_opacity;

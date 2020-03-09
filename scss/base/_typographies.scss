@@ -12,12 +12,10 @@ html {
     font-size: map-get($font-size, s);
     font-weight: normal;
 }
-.container_menu {
-    font-size: map-get($font-size, s);
-}
-.container {
+.container_menu, .container {
     font-size: map-get($font-size, xs);
 }
+
 .title_menu_top_left, .title_menu_bottom_left {
     font-family: 'Ubuntu', sans-serif;
 }
