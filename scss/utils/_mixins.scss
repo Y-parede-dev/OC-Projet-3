@@ -16,7 +16,6 @@
     background: linear-gradient($rotate, $color--1, $color--2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
 }
 @mixin underline($color) {
     opacity: 0;
