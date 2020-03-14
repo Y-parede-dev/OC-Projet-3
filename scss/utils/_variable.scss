@@ -23,10 +23,3 @@ $b-shadow: 0 2px 8.5px 1px rgba(0,0,0,0.175);
 
 
 $margin_header: 0;
-
-$shadow: '"';
-$color: blue;
-
-@if ($color == blue) { $shadow: 0 0 5px black; }
-@else if ($color == orange) { $shadow: 0 5px 0 red; }
-@else { $shadow: 5px 5px white; }
