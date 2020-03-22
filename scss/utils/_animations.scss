@@ -9,7 +9,6 @@
         animation-duration: 2500ms;
         transform: scale(1.5);
         opacity: 0.6;
-        
     }
 }
 .effect_wiggle {
@@ -42,7 +41,6 @@
     @include underline($color_text_third_M--3)
 }
 .underline--4 {
-    
     @include underline($color_text_fourth_M--1)
 }
 

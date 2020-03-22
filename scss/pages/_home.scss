@@ -1,4 +1,3 @@
-
 .title_menu {
     text-transform: capitalize;
     margin: 0;
@@ -43,7 +42,6 @@
     width: max-content;
     margin: 0 auto 7rem;
     padding: 0 1.2rem;
-
 }
 .container h3 {
     margin: 3% 2%;
@@ -68,13 +66,10 @@
     animation-delay: 0.3s;
 }
 @media all and (min-width: 1921px) {
-    
-
     .container_menu {
         gap: 2.5rem;
         margin: 3% 21% 2%;
     }
- 
     .one, .two, .three {
         width: 20px;
         height: 17px;
@@ -124,12 +119,10 @@
     }
 }
 @media screen and (min-width:map-get($breakpoints, mobile)) and (max-width:map-get($breakpoints, tablette)-1px) {
-   
     .container_menu {
         gap: 4.5rem;
         margin: 7% 10% 6%;
     }
- 
     .one, .two, .three {
         width: 6px;
         height: 4px;
