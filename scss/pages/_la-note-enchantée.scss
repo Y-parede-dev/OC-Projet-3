@@ -3,6 +3,9 @@
     height: auto;
     margin: 6% 46.5% 0;
 }
+.menuInside{
+    color:map-get($txt-colors, first)
+}
 .title_first_bottom {
     margin: 0;
 }
