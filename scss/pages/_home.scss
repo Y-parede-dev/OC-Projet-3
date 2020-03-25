@@ -20,8 +20,8 @@
     text-decoration: none;
     text-align: center;
    
-    @include back_color($back_colors);
-    @include txt_color($txt_colors);
+    @include back-color($back_colors);
+    @include txt-color($txt_colors);
 }
 .img_menu {
     width: 12%;

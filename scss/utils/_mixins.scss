@@ -1,12 +1,12 @@
-@mixin back_color($back_colors){
-    @each $mod, $var in $back_colors { 
+@mixin back_color($back-colors){
+    @each $mod, $var in $back-colors { 
         &--#{$mod}{
             background: $var;
         }
     }
 }
-@mixin txt_color($txt_colors) {
-    @each $mod, $var in $txt_colors {
+@mixin txt_color($txt-colors) {
+    @each $mod, $var in $txt-colors {
         &--#{$mod}{
             color: $var;
         }
