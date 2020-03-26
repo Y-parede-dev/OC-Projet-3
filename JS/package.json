@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/Y-parede-dev/OC-Projet-3/issues"
   },
-  "homepage": "https://github.com/Y-parede-dev/OC-Projet-3#readme",
+  "homepage": "https://y-parede-dev.github.io/OC-Projet-3/",
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "postcss": "^7.0.27",
