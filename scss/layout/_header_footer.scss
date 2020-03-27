@@ -4,8 +4,9 @@
 header {
     margin: $margin_header;
     width: 100%;
+    max-height: fit-content;
     background-color: $color_back;
-    padding: .8rem 0;
+    padding: .5rem 0;
     font-weight: bold;
     text-align: center;
 }
@@ -27,6 +28,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    max-height: fit-content;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -39,7 +41,8 @@ footer a {
     font-weight: bold;
     width: fit-content;
     
-    padding: 1.2rem;
+
+    padding: .8rem;
 }
 
 .contactez-nous {

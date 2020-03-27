@@ -12,7 +12,8 @@
     gap: 2.5rem;
     justify-content: space-between;
     margin: 10% 13%;
-} 
+}
+
 .menu {
     cursor: pointer;
     
@@ -71,10 +72,11 @@
         margin: 3% 21% 2%;
     }
     .one, .two, .three {
-        width: 20px;
-        height: 17px;
-        margin: 1rem .4rem;
+        width: 18px;
+        height: 15px;
+        margin: .8rem .2rem;
     }
+  
 }
 @media screen and (min-width:map-get($breakpoints, pc)) and (max-width:map-get($breakpoints, pc-max)) {
     .container_menu {
@@ -87,7 +89,7 @@
     .one, .two, .three {
         width: 10px;
         height: 7px;
-        margin: 1rem .4rem;
+        margin: 0 .4rem;
     }
 }
 @media screen and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc)-1px) {
@@ -99,9 +101,9 @@
         height: 29rem;
     }
     .one, .two, .three {
-        width: 10px;
-        height: 7px;
-        margin: 1rem .4rem;
+        width: 6px;
+        height: 3px;
+        
     }
 }
 @media screen and (min-width:map-get($breakpoints, tablette)) and (max-width:map-get($breakpoints, laytop)-1px) {
@@ -115,7 +117,7 @@
     .one, .two, .three {
         width: 7px;
         height: 5px;
-        margin: .3rem .4rem;
+        margin: -.4rem .4rem;
     }
 }
 @media screen and (min-width:map-get($breakpoints, mobile)) and (max-width:map-get($breakpoints, tablette)-1px) {
@@ -134,7 +136,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         gap: 10rem;
-        margin: 10% 30%;
+        margin: 10% 20%;
     }
     .container {
         margin: 10% auto 15rem;
@@ -143,8 +145,8 @@
         height: 40rem;
     }
     .one, .two, .three {
-        width:4px;
-        height: 2px;
+        width:2px;
+        height: 1px;
         margin: -1.5rem .4rem;
     }
 }

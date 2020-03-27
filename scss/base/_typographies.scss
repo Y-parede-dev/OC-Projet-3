@@ -13,8 +13,11 @@ html {
 .title_all {
     font-weight: normal;
 }
-.container_menu, .container, .container_underline > .title_second_M {
+.container_menu, .container_underline > .title_second_M {
     font-size: map-get($font-size, xs);
+}
+.container {
+    font-size: map-get($font-size, xxs);
 }
 .title_menu_top_left, .title_menu_bottom_left {
     font-family: 'Ubuntu', sans-serif;
@@ -88,6 +91,6 @@ html {
 }
 @media all and (max-width: 599px) {
     html {
-        font-size: 33%;
+        font-size: 41%;
     }
 }

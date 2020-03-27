@@ -70,7 +70,7 @@ html, body {
   border-radius: 10px 2px;
   background-color: #3C1218;
   transform-origin: 0% 50%;
-  transition: ease-in-out 2.3s;
+  transition: ease-in-out .3s;
   transform: scaleX(0); }
 
 .underline--2_1 {
@@ -82,7 +82,7 @@ html, body {
   border-radius: 10px 2px;
   background-color: #C67412;
   transform-origin: 0% 50%;
-  transition: ease-in-out 2.3s;
+  transition: ease-in-out .3s;
   transform: scaleX(0); }
 
 .underline--2_2 {
@@ -94,7 +94,7 @@ html, body {
   border-radius: 10px 2px;
   background-color: #A56799;
   transform-origin: 0% 50%;
-  transition: ease-in-out 2.3s;
+  transition: ease-in-out .3s;
   transform: scaleX(0); }
 
 .underline--2_3 {
@@ -106,7 +106,7 @@ html, body {
   border-radius: 10px 2px;
   background-color: #6E4CCC;
   transform-origin: 0% 50%;
-  transition: ease-in-out 2.3s;
+  transition: ease-in-out .3s;
   transform: scaleX(0); }
 
 .underline--3_1 {
@@ -118,7 +118,7 @@ html, body {
   border-radius: 10px 2px;
   background-color: #0228DD;
   transform-origin: 0% 50%;
-  transition: ease-in-out 2.3s;
+  transition: ease-in-out .3s;
   transform: scaleX(0); }
 
 .underline--3_2 {
@@ -130,7 +130,7 @@ html, body {
   border-radius: 10px 2px;
   background-color: #0670F3;
   transform-origin: 0% 50%;
-  transition: ease-in-out 2.3s;
+  transition: ease-in-out .3s;
   transform: scaleX(0); }
 
 .underline--3_3 {
@@ -142,7 +142,7 @@ html, body {
   border-radius: 10px 2px;
   background-color: #88C6F5;
   transform-origin: 0% 50%;
-  transition: ease-in-out 2.3s;
+  transition: ease-in-out .3s;
   transform: scaleX(0); }
 
 .underline--4 {
@@ -154,7 +154,7 @@ html, body {
   border-radius: 10px 2px;
   background-color: #3D923A;
   transform-origin: 0% 50%;
-  transition: ease-in-out 2.3s;
+  transition: ease-in-out .3s;
   transform: scaleX(0); }
 
 .title_all {
@@ -179,8 +179,11 @@ html {
 .title_all {
   font-weight: normal; }
 
-.container_menu, .container, .container_underline > .title_second_M {
+.container_menu, .container_underline > .title_second_M {
   font-size: 2rem; }
+
+.container {
+  font-size: 1.5rem; }
 
 .title_menu_top_left, .title_menu_bottom_left {
   font-family: 'Ubuntu', sans-serif; }
@@ -248,13 +251,14 @@ html {
     font-size: 62.5%; } }
 @media all and (max-width: 599px) {
   html {
-    font-size: 33%; } }
+    font-size: 41%; } }
 /*----header-----*/
 header {
   margin: 0;
   width: 100%;
+  max-height: fit-content;
   background-color: #579C87;
-  padding: .8rem 0;
+  padding: .5rem 0;
   font-weight: bold;
   text-align: center; }
 
@@ -273,6 +277,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  max-height: fit-content;
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -283,7 +288,7 @@ footer a {
   text-decoration: none;
   font-weight: bold;
   width: fit-content;
-  padding: 1.2rem; }
+  padding: .8rem; }
 
 .contactez-nous {
   display: flex;
@@ -464,9 +469,9 @@ li {
     margin: 3% 21% 2%; }
 
   .one, .two, .three {
-    width: 20px;
-    height: 17px;
-    margin: 1rem .4rem; } }
+    width: 18px;
+    height: 15px;
+    margin: .8rem .2rem; } }
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
   .container_menu {
     gap: 3rem;
@@ -478,7 +483,7 @@ li {
   .one, .two, .three {
     width: 10px;
     height: 7px;
-    margin: 1rem .4rem; } }
+    margin: 0 .4rem; } }
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   .container_menu {
     gap: 3.5rem;
@@ -488,9 +493,8 @@ li {
     height: 29rem; }
 
   .one, .two, .three {
-    width: 10px;
-    height: 7px;
-    margin: 1rem .4rem; } }
+    width: 6px;
+    height: 3px; } }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .container_menu {
     gap: 4rem;
@@ -502,7 +506,7 @@ li {
   .one, .two, .three {
     width: 7px;
     height: 5px;
-    margin: .3rem .4rem; } }
+    margin: -.4rem .4rem; } }
 @media screen and (min-width: 600px) and (max-width: 767px) {
   .container_menu {
     gap: 4.5rem;
@@ -517,7 +521,7 @@ li {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 10rem;
-    margin: 10% 30%; }
+    margin: 10% 20%; }
 
   .container {
     margin: 10% auto 15rem; }
@@ -526,8 +530,8 @@ li {
     height: 40rem; }
 
   .one, .two, .three {
-    width: 4px;
-    height: 2px;
+    width: 2px;
+    height: 1px;
     margin: -1.5rem .4rem; } }
 .img_note_musique_inside_menu {
   width: 7.5%;
