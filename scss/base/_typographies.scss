@@ -4,11 +4,12 @@ html {
 .main_top-L, .menu--first {
     font-family: 'Devonshire', cursive;
 }
-.title_first, .title_all, .title_second--inside {
-    font-size: map-get($font-size, s);
+.title_all, .title_second--inside {
+    font-size: map-get($font-size, ms);
 }
 .title_first {
     text-align: center;
+    font-size: map-get($font-size, m);
 }
 .title_all {
     font-weight: normal;
@@ -32,7 +33,7 @@ html {
     @include gradient(90deg, $color_text_second_M--1 20%, $color_text_second_M--2 47%);  
 }
 .title_third_inside {
-    font-size: map-get($font-size, l);
+    font-size: map-get($font-size, lm);
 }
 .menu--third {
     font-family: Arial, Helvetica, sans-serif;
@@ -57,16 +58,16 @@ html {
     @include gradient(.25turn, $color_text_fourth_M--1, $color_text_fourth_M--2)
 }
 .title_first_bottom {
-    font-size: map-get($font-size, m);
+    font-size: map-get($font-size, ms);
 }
 .item {
     &__title, &__price {
-        font-size: 1.3rem;
+        font-size: map-get($font-size, txt_mobile );
     }
 }
 .first {
-    &__item_title, &__item_proce {
-        font-size: map-get($font-size, xxs);
+    &__item_title, &__item_price {
+        font-size: map-get($font-size, txt_mobile );
     }
 }
 @media screen and (min-width:map-get($breakpoints, pc-max)+1px){
@@ -91,6 +92,11 @@ html {
 }
 @media all and (max-width: 599px) {
     html {
-        font-size: 41%;
+        font-size: 65%;
+    }
+    .first {
+        &__item_title, &__item_price {
+            text-align: center;
+        }
     }
 }

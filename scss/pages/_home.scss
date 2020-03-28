@@ -84,7 +84,7 @@
         margin: 4% 21% 3%;
     }
    .anim_menu_zoom {
-       height: 38rem;
+       height: 630px;
    }
     .one, .two, .three {
         width: 10px;
@@ -135,18 +135,19 @@
     .container_menu {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 10rem;
-        margin: 10% 20%;
+        gap: 5rem;
+        margin: 10% 10%;
     }
     .container {
         margin: 10% auto 15rem;
     }
-    .anim_menu_zoom {
-        height: 40rem;
+    .anim_menu_zoom
+     {
+        height: 350px;
     }
     .one, .two, .three {
-        width:2px;
-        height: 1px;
-        margin: -1.5rem .4rem;
+        width:5px;
+        height: 3px;
+        margin: -.3rem .4rem;
     }
 }
