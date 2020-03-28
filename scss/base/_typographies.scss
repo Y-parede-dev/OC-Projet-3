@@ -72,7 +72,7 @@ html {
 }
 @media screen and (min-width:map-get($breakpoints, pc-max)+1px){
     html {
-        font-size: 220%;
+        font-size: 150%;
     }
 }
 @media screen and (min-width:map-get($breakpoints, laytop)) and (max-width:map-get($breakpoints, pc-max)){
