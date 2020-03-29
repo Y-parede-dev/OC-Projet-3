@@ -13,3 +13,8 @@
         font-size: 1.85rem;
     }
 }
+@media screen and (min-width: map-get($breakpoints, pc-max)) {
+    .title_second--inside {
+        padding: 9rem 0 0;
+    }
+}

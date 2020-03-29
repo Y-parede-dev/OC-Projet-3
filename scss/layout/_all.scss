@@ -22,8 +22,11 @@ li {
 }
 .title_first {
     margin: 5.35% 0 2.2%;
+
 }
 .barre {
+    max-width: 354px;
+    max-height: 27px;
     width: 34%;
     height: .5%;
     margin: -3%;
@@ -52,14 +55,13 @@ li {
         margin: 5px 0 0;
     }
 }
-
 @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, pc-max)) {
 
     .barre {
         width: 30%;
     }
 }
-@media screen and (min-width: map-get($breakpoints, mobile)-300px) and (max-width: map-get($breakpoints, tablette)) {
+@media screen and (min-width: map-get($breakpoints, mobile)-300px) and (max-width: map-get($breakpoints, mobile)) {
     section {
         margin:2%;
     }

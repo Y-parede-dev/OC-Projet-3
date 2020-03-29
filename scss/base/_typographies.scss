@@ -15,7 +15,7 @@ html {
     font-weight: normal;
 }
 .container_menu, .container_underline > .title_second_M {
-    font-size: map-get($font-size, xs);
+    font-size: map-get($font-size, s);
 }
 .container {
     font-size: map-get($font-size, xxs);
@@ -92,7 +92,7 @@ html {
 }
 @media all and (max-width: 599px) {
     html {
-        font-size: 65%;
+        font-size: 52%;
     }
     .first {
         &__item_title, &__item_price {
