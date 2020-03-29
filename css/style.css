@@ -180,7 +180,7 @@ html {
 .title_all {
   font-weight: normal; }
 
-.container_menu, .container_underline > .title_second_M {
+.container_menu, .container_underline > .title_all {
   font-size: 2.5rem; }
 
 .container {
@@ -217,7 +217,7 @@ html {
 .title_fourth_inside {
   font-size: 6rem; }
 
-.container_underline > .title_fourth_M, footer a {
+.footer a {
   font-size: 2rem; }
 
 .menu--fourth {
@@ -233,7 +233,7 @@ html {
   font-size: 3rem; }
 
 .item__title, .item__price {
-  font-size: 2.2rem; }
+  font-size: 2rem; }
 
 .first__item_title, .first__item_price {
   font-size: 2.2rem; }
@@ -309,7 +309,10 @@ footer a {
     padding: .8rem 0; }
 
   .logo {
-    width: 76%; } }
+    width: 76%; }
+
+  footer {
+    font-size: 1.8rem; } }
 main {
   margin: 0 4.75% 17%;
   box-shadow: 0 2px 8.5px 1px rgba(0, 0, 0, 0.175);
@@ -553,7 +556,7 @@ li {
   .one, .two, .three {
     width: 5px;
     height: 3px;
-    margin: -.3rem .4rem; } }
+    margin: -1rem .4rem; } }
 .img_note_musique_inside_menu {
   width: 7.5%;
   height: auto;

@@ -14,7 +14,7 @@ html {
 .title_all {
     font-weight: normal;
 }
-.container_menu, .container_underline > .title_second_M {
+.container_menu, .container_underline > .title_all {
     font-size: map-get($font-size, s);
 }
 .container {
@@ -47,7 +47,7 @@ html {
 .title_fourth_inside {
     font-size: map-get($font-size, xl);
 }
-.container_underline > .title_fourth_M, footer a {
+.footer a {
     font-size: map-get($font-size, xs);
 }
 .menu--fourth {
@@ -62,12 +62,12 @@ html {
 }
 .item {
     &__title, &__price {
-        font-size: map-get($font-size, txt_mobile );
+        font-size: map-get($font-size, xs);
     }
 }
 .first {
     &__item_title, &__item_price {
-        font-size: map-get($font-size, txt_mobile );
+        font-size: map-get($font-size, txt_mobile);
     }
 }
 @media screen and (min-width:map-get($breakpoints, pc-max)+1px){
