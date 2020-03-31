@@ -167,11 +167,14 @@ html, body {
 html {
   font-size: 100%; }
 
+.menu {
+  font-size: 2.5rem; }
+
 .main_top-L, .menu--first {
   font-family: 'Devonshire', cursive; }
 
 .title_all, .title_second--inside {
-  font-size: 3rem; }
+  font-size: 2.5rem; }
 
 .title_first {
   text-align: center;
@@ -179,9 +182,6 @@ html {
 
 .title_all {
   font-weight: normal; }
-
-.container_menu, .container_underline > .title_all {
-  font-size: 2.5rem; }
 
 .container {
   font-size: 1.5rem; }
@@ -278,6 +278,7 @@ h1 {
 
 /*---- footer ----*/
 footer {
+  font-size: 1.8rem;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -309,10 +310,7 @@ footer a {
     padding: .8rem 0; }
 
   .logo {
-    width: 76%; }
-
-  footer {
-    font-size: 1.8rem; } }
+    width: 76%; } }
 main {
   margin: 0 4.75% 17%;
   box-shadow: 0 2px 8.5px 1px rgba(0, 0, 0, 0.175);
@@ -347,11 +345,11 @@ li {
   margin: 5.35% 0 2.2%; }
 
 .barre {
-  max-width: 354px;
+  max-width: 1685px;
   max-height: 27px;
   width: 34%;
   height: .5%;
-  margin: -3%; }
+  margin: -2%; }
 
 .menu_section {
   margin: 0;
@@ -381,7 +379,7 @@ li {
     margin: 2%; }
 
   .barre {
-    width: 16%;
+    width: 22%;
     margin: 0; }
 
   .second_barre {
@@ -493,9 +491,9 @@ li {
     margin: 3% 21% 2%; }
 
   .one, .two, .three {
-    width: 18px;
-    height: 15px;
-    margin: .8rem .2rem; } }
+    width: 13px;
+    height: 9px;
+    margin: .6rem .2rem; } }
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
   .container_menu {
     gap: 3rem;

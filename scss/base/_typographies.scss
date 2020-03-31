@@ -1,11 +1,14 @@
 html {
     font-size: 100%;
 }
+.menu {
+    font-size: map-get($font-size, s);
+}
 .main_top-L, .menu--first {
     font-family: 'Devonshire', cursive;
 }
 .title_all, .title_second--inside {
-    font-size: map-get($font-size, ms);
+    font-size: map-get($font-size, s);
 }
 .title_first {
     text-align: center;
@@ -15,7 +18,7 @@ html {
     font-weight: normal;
 }
 .container_menu, .container_underline > .title_all {
-    font-size: map-get($font-size, s);
+    font-size: map-get($font-size, mobile);
 }
 .container {
     font-size: map-get($font-size, xxs);
