@@ -469,7 +469,7 @@ li {
 .one, .two, .three {
   width: 7px;
   height: 5px;
-  border: #FCCA46 1px solid;
+  border: 1px solid;
   border-radius: 100%;
   background-color: #FCCA46;
   margin: 2.5% .2rem;

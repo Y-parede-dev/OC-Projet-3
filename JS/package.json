@@ -14,8 +14,11 @@
   },
   "author": "",
   "license": "ISC",
-  "browserlist": [
-    "defaults"
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
   ],
   "bugs": {
     "url": "https://github.com/Y-parede-dev/OC-Projet-3/issues"
